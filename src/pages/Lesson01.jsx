@@ -5,8 +5,20 @@ import RememberBlock from "../components/RememberBlock";
 import { rememberData } from "../assets/audio/data/rememberData";
 import { Link } from "react-router";
 import ArrowBack from "../components/ArrowBack";
+import { useState } from "react";
 
 function Lesson01() {
+  const [currentAudio, setCurrentAudio] = useState(null);
+  // Обработчик для воспроизведения
+  const handleAudioPlay = (audioIndex) => {
+    if (currentAudio !== null && currentAudio !== audioIndex) {
+      // Останавливаем проигрывание предыдущего аудио
+      const prevAudio = document.getElementById(`audio-${currentAudio}`);
+      prevAudio.pause();
+    }
+    setCurrentAudio(audioIndex);
+  };
+
   return (
     <div className="max-w-3xl mx-auto p-4 relative">
       <ArrowBack />
@@ -74,7 +86,11 @@ function Lesson01() {
       <h3 className="font-semibold text-lg mt-6 mb-2">
         Упражнение 1. Перепишите латиницей следующие слова:
       </h3>
-      <AudioPlayer src="/src/assets/audio/001.-Urok-01_Uprazhnenie_1.mp3" />
+      <AudioPlayer
+        src="/src/assets/audio/001.-Urok-01_Uprazhnenie_1.mp3"
+        index={0}
+        onPlay={handleAudioPlay}
+      />
 
       <p className="mb-2">а) обратите внимание на мягкие љ и њ:</p>
       <div className="space-y-2 mb-4">
@@ -388,7 +404,11 @@ function Lesson01() {
       <p className="text-lg font-medium mb-3">
         Перепишите кириллицей следующие слова:
       </p>
-      <AudioPlayer src="/src/assets/audio/002.-Urok-01_Uprazhnenie_2.mp3" />
+      <AudioPlayer
+        src="/src/assets/audio/002.-Urok-01_Uprazhnenie_2.mp3"
+        index={1}
+        onPlay={handleAudioPlay}
+      />
       <p className="font-medium mb-2">а) обратите внимание на lj и nj:</p>
       <div className="space-y-2 mb-4">
         <div className="gap-4">
@@ -715,7 +735,8 @@ function Lesson01() {
 
       <AudioPlayer
         src="/src/assets/audio/003.-Urok-01_Uprazhnenie_4.mp3"
-        className="mb-6"
+        index={2}
+        onPlay={handleAudioPlay}
       />
 
       <div className="space-y-6">
