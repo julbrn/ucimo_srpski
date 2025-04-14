@@ -1,7 +1,7 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
 
-// Компонент AudioPlayer
-const AudioPlayer = ({ src, index, onPlay }) => {
+const AudioPlayer = React.memo(({ src, index, onPlay }) => {
+  //Добавлен ref для предотвращения одновременного проигрывания аудио (логика в handleAudioPlay )
   const audioRef = useRef(null);
 
   return (
@@ -18,6 +18,6 @@ const AudioPlayer = ({ src, index, onPlay }) => {
       </audio>
     </div>
   );
-};
+});
 
 export default AudioPlayer;

@@ -3,21 +3,58 @@ import InputCheck from "../components/InputCheck";
 import FreeInput from "../components/FreeInput";
 import RememberBlock from "../components/RememberBlock";
 import { rememberData } from "../assets/audio/data/rememberData";
-import { Link } from "react-router";
 import ArrowBack from "../components/ArrowBack";
-import { useState } from "react";
+import { useState, useCallback, useMemo } from "react";
 
 function Lesson01() {
   const [currentAudio, setCurrentAudio] = useState(null);
   // Обработчик для воспроизведения
-  const handleAudioPlay = (audioIndex) => {
-    if (currentAudio !== null && currentAudio !== audioIndex) {
-      // Останавливаем проигрывание предыдущего аудио
-      const prevAudio = document.getElementById(`audio-${currentAudio}`);
-      prevAudio.pause();
-    }
-    setCurrentAudio(audioIndex);
-  };
+  const handleAudioPlay = useCallback(
+    (audioIndex) => {
+      if (currentAudio !== null && currentAudio !== audioIndex) {
+        const prevAudio = document.getElementById(`audio-${currentAudio}`);
+        if (prevAudio) prevAudio.pause();
+      }
+      setCurrentAudio(audioIndex);
+    },
+    [currentAudio]
+  );
+
+  const alphabetData = useMemo(
+    () => [
+      ["А а", "A a", "а"],
+      ["Б б", "B b", "б"],
+      ["В в", "V v", "в"],
+      ["Г г", "G g", "г"],
+      ["Д д", "D d", "д"],
+      ["Ђ ђ", "Đ, đ (Dj, dj)", "д’ж’"],
+      ["Е е", "E e", "е"],
+      ["Ж ж", "Ž ž", "ж"],
+      ["З з", "Z z", "з"],
+      ["И и", "I i", "и"],
+      ["Ј ј", "J j", "й"],
+      ["К к", "K k", "к"],
+      ["Л л", "L l", "л"],
+      ["Љ љ", "Lj lj", "мягкий л"],
+      ["М м", "M m", "м"],
+      ["Н н", "N n", "н"],
+      ["Њ њ", "Nj nj", "мягкий н"],
+      ["О о", "O o", "о"],
+      ["П п", "P p", "п"],
+      ["Р р", "R r", "р"],
+      ["С с", "S s", "с"],
+      ["Т т", "T t", "т"],
+      ["Ћ ћ", "Ć ć", "мягкий ч"],
+      ["У у", "U u", "у"],
+      ["Ф ф", "F f", "ф"],
+      ["Х х", "H h", "х"],
+      ["Ц ц", "C c", "ц"],
+      ["Ч ч", "Č č", "твердый ч"],
+      ["Џ џ", "Dž dž", "дж"],
+      ["Ш ш", "Š š", "ш"],
+    ],
+    []
+  );
 
   return (
     <div className="max-w-3xl mx-auto p-4 relative">
@@ -42,38 +79,7 @@ function Lesson01() {
           </tr>
         </thead>
         <tbody>
-          {[
-            ["А а", "A a", "а"],
-            ["Б б", "B b", "б"],
-            ["В в", "V v", "в"],
-            ["Г г", "G g", "г"],
-            ["Д д", "D d", "д"],
-            ["Ђ ђ", "Đ, đ (Dj, dj)", "д’ж’"],
-            ["Е е", "E e", "е"],
-            ["Ж ж", "Ž ž", "ж"],
-            ["З з", "Z z", "з"],
-            ["И и", "I i", "и"],
-            ["Ј ј", "J j", "й"],
-            ["К к", "K k", "к"],
-            ["Л л", "L l", "л"],
-            ["Љ љ", "Lj lj", "мягкий л"],
-            ["М м", "M m", "м"],
-            ["Н н", "N n", "н"],
-            ["Њ њ", "Nj nj", "мягкий н"],
-            ["О о", "O o", "о"],
-            ["П п", "P p", "п"],
-            ["Р р", "R r", "р"],
-            ["С с", "S s", "с"],
-            ["Т т", "T t", "т"],
-            ["Ћ ћ", "Ć ć", "мягкий ч"],
-            ["У у", "U u", "у"],
-            ["Ф ф", "F f", "ф"],
-            ["Х х", "H h", "х"],
-            ["Ц ц", "C c", "ц"],
-            ["Ч ч", "Č č", "твердый ч"],
-            ["Џ џ", "Dž dž", "дж"],
-            ["Ш ш", "Š š", "ш"],
-          ].map(([cyr, lat, pron], idx) => (
+          {alphabetData.map(([cyr, lat, pron], idx) => (
             <tr key={idx} className="even:bg-gray-50">
               <td className="border px-4 py-3">{cyr}</td>
               <td className="border px-4 py-3">{lat}</td>
