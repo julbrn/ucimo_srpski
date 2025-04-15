@@ -4,9 +4,10 @@ import {
   useParams,
   Link,
 } from "react-router";
+import React, { Suspense, lazy } from "react";
 import "./index.css";
-import Lesson01 from "./pages/Lesson01";
-import Lesson02 from "./pages/Lesson02";
+const Lesson01 = lazy(() => import("./pages/Lesson01"));
+const Lesson02 = lazy(() => import("./pages/Lesson02"));
 
 // Данные уроков
 const lessons = [
@@ -336,10 +337,24 @@ const lessonsMap = {
 // Компонент для отображения уроков на основе маршрута
 function LessonRouter() {
   const { id } = useParams();
+  let LessonComponent;
+
+  // Ленивая загрузка компонента урока на основе id
+  switch (id) {
+    case "lesson01":
+      LessonComponent = Lesson01;
+      break;
+    case "lesson02":
+      LessonComponent = Lesson02;
+      break;
+    default:
+      return <div className="p-4 text-center text-red-600">Урок не найден</div>;
+  }
+
   return (
-    lessonsMap[id] || (
-      <div className="p-4 text-center text-red-600">Урок не найден</div>
-    )
+    <Suspense fallback={<div>Загрузка урока...</div>}>
+      <LessonComponent />
+    </Suspense>
   );
 }
 
