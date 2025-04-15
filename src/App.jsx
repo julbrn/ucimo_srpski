@@ -282,25 +282,26 @@ const lessons = [
   },
 ];
 
-// Главная страница с уроками
 function Home() {
   return (
     <div className="min-h-screen bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white p-6">
       <h1 className="text-3xl font-semibold mb-6 text-center">
         ПОЛНЫЙ КУРС СЕРБСКОГО ЯЗЫКА
       </h1>
-      <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 max-w-5xl mx-auto">
+      <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 max-w-5xl mx-auto ">
         {lessons.map((lesson) => (
-          // Оборачиваем весь div с уроком в Link
-          <Link
+          <div
             key={lesson.id}
-            to={`/${lesson.id}`} // Переход на страницу урока
-            className="block border rounded-xl p-4 hover:shadow-md transition bg-zinc-50 dark:bg-zinc-800"
+            className="block  p-4 hover:shadow-md transition bg-zinc-50 dark:bg-zinc-800"
           >
-            <h2 className="text-lg font-medium hover:text-blue-600">
-              {lesson.title}
-            </h2>
-
+            <Link
+              to={`/${lesson.id}`}
+              className="block  p-4 transition bg-zinc-50 dark:bg-zinc-800"
+            >
+              <h2 className="text-lg font-medium hover:text-blue-600">
+                {lesson.title}
+              </h2>
+            </Link>
             {/* Подпункты */}
             {lesson.subLessons && (
               <div className="mt-4">
@@ -319,7 +320,7 @@ function Home() {
                 </ul>
               </div>
             )}
-          </Link>
+          </div>
         ))}
       </div>
     </div>
