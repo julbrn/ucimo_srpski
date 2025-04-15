@@ -93,7 +93,7 @@ function Lesson01() {
         Упражнение 1. Перепишите латиницей следующие слова:
       </h3>
       <AudioPlayer
-        src="/audio/001.-Urok-01_Uprazhnenie_1.mp3"
+        src="/src/assets/audio/001.-Urok-01_Uprazhnenie_1.mp3"
         index={0}
         onPlay={handleAudioPlay}
       />
@@ -411,7 +411,7 @@ function Lesson01() {
         Перепишите кириллицей следующие слова:
       </p>
       <AudioPlayer
-        src="/audio/002.-Urok-01_Uprazhnenie_2.mp3"
+        src="src/assets/audio/002.-Urok-01_Uprazhnenie_2.mp3"
         index={1}
         onPlay={handleAudioPlay}
       />
@@ -740,7 +740,7 @@ function Lesson01() {
       </h3>
 
       <AudioPlayer
-        src="/audio/003.-Urok-01_Uprazhnenie_4.mp3"
+        src="src/assets/audio/003.-Urok-01_Uprazhnenie_4.mp3"
         index={2}
         onPlay={handleAudioPlay}
       />
