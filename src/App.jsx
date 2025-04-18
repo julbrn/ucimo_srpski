@@ -1,371 +1,39 @@
-import {
-  RouterProvider,
-  createBrowserRouter,
-  useParams,
-  Link,
-} from "react-router";
-import React, { Suspense, lazy } from "react";
-import "./index.css";
-const Lesson01 = lazy(() => import("./pages/Lesson01"));
-const Lesson02 = lazy(() => import("./pages/Lesson02"));
+import React, { lazy, Suspense } from "react";
+import { RouterProvider, createBrowserRouter, useParams } from "react-router";
+import Home from "./pages/Home";
+import LoaderOverlay from "./components/LoaderOverlay";
 
-// Данные уроков
-const lessons = [
-  {
-    id: "lesson01",
-    title:
-      "УРОК 1. АЛФАВИТ И ПРАВИЛА ПИСЬМА. ОСНОВНЫЕ ФОНЕТИЧЕСКИЕ ОСОБЕННОСТИ СЕРБСКОГО ЯЗЫКА",
-  },
-  {
-    id: "lesson02",
-    title: "УРОК 2. УПОЗНАВАЊЕ",
-    subLessons: [
-      {
-        id: "lesson02a",
-        title: "2а. На пасошкој контроли на београдском аеродрому",
-      },
-      {
-        id: "lesson02b",
-        title:
-          "2б. Павле прича о себи и о Србији. Отрицательная форма глагола бити",
-      },
-      {
-        id: "lesson02c",
-        title:
-          "2в. Да ли је све у реду? Построение вопросов. Полные формы глагола бити",
-      },
-      {
-        id: "lesson02d",
-        title:
-          "2г. Шта је то? Вопросы с вопросительными словами. Окончания существительных в именительном падеже единственного числа. Множественное число существительных. Указательные местоимения.",
-      },
-    ],
-  },
-  {
-    id: "lesson03",
-    title: "УРОК 3. ГОВОРИМО О СЕБИ",
-    subLessons: [
-      {
-        id: "lesson03a",
-        title:
-          "3а. На пасошкој контроли на београдском аеродрому (продолжение). Глаголы и-спряжения.",
-      },
-      {
-        id: "lesson03b",
-        title:
-          "3б. Долази Горан. Склонение существительных и прилагательных женского рода с окончанием -а в единственном числе.",
-      },
-      {
-        id: "lesson03c",
-        title: "3в. Павле узима на аеродрому такси и иде у хотел.",
-      },
-    ],
-  },
-  {
-    id: "lesson04",
-    title: "УРОК 4. ПОРОДИЦА",
-    subLessons: [
-      {
-        id: "lesson04a",
-        title: "4а. Горан и Павле се договарају за сутра. Глаголы а-спряжения.",
-      },
-      {
-        id: "lesson04b",
-        title:
-          "4б. Горан и Павле причају о породици. Числительные. Время и даты.",
-      },
-      {
-        id: "lesson04c",
-        title:
-          "4в. Горанова породица. Прича Горанове жене Милице. Притяжательные местоимения и выражение принадлежности.",
-      },
-    ],
-  },
-  {
-    id: "lesson05",
-    title: "УРОК 5. КУЋА",
-    subLessons: [
-      {
-        id: "lesson05a",
-        title:
-          "5а. Горан и Павле на слави. Склонение существительных и прилагательных мужского рода в единственном числе.",
-      },
-      {
-        id: "lesson05b",
-        title: "5б. Огласи за некретнине. Глаголы е-спряжения.",
-      },
-    ],
-  },
-  {
-    id: "lesson06",
-    title: "УРОК 6. РАДНИ ДАН",
-    subLessons: [
-      {
-        id: "lesson06a",
-        title:
-          "6а. Разговор Павла и непознатог човека на слави. Павлов план за прекосутра. Замена неопределенной формы глагола (инфинитива) конструкцией да + настоящее время. Модальные глаголы моћи, хтети.",
-      },
-      {
-        id: "lesson06b",
-        title:
-          "6б. Једна радна недеља у животу Павловог пријатеља Зорана (први део). Указательные местоимения.",
-      },
-    ],
-  },
-  {
-    id: "lesson07",
-    title: "УРОК 7. СЛОБОДНО ВРЕМЕ И ХОБИ",
-    subLessons: [
-      {
-        id: "lesson07a",
-        title: "7а. Павле иде у Руски дом",
-      },
-      {
-        id: "lesson07b",
-        title:
-          "7б. Павле на путу до Руског дома. Склонение личных местоимений ја, ти, ми, ви",
-      },
-      {
-        id: "lesson07c",
-        title:
-          "7в. Једна радна недеља у животу Зорана (други део): одмор. Српска култура. Викенд.",
-      },
-    ],
-  },
-  {
-    id: "lesson08",
-    title: "УРОК 8. ШТА ЈЕ БИЛО ЈУЧЕ?",
-    subLessons: [
-      {
-        id: "lesson08a",
-        title: "8а. Павле у Руском дому. Прошедшее время.",
-      },
-      {
-        id: "lesson08b",
-        title:
-          "8б. Шта је Горан радио у петак? Склонение личных местоимений он (оно), она, они (оне, она).",
-      },
-      {
-        id: "lesson08c",
-        title:
-          "8в. Павле прича о выбору профессии. Порядок слов в предложении: место кратких форм.",
-      },
-    ],
-  },
-  {
-    id: "lesson09",
-    title: "УРОК 9. ПУТОВАЊЕ",
-    subLessons: [
-      {
-        id: "lesson09a",
-        title: "9а. Павле путује у Нови Сад. Безличные конструкции.",
-      },
-      {
-        id: "lesson09b",
-        title:
-          "9б. Павле тражи хотел. Склонение существительных и прилагательных женского рода на -а во множественном числе.",
-      },
-      {
-        id: "lesson09c",
-        title: "Српска култура. Како Срби проводе одмор. Градови.",
-      },
-    ],
-  },
-  {
-    id: "lesson10",
-    title: "УРОК 10. ОДМОР",
-    subLessons: [
-      {
-        id: "lesson10a",
-        title:
-          "10а. Павле у хотелу и у Дунавском парку. Склонение существительных и прилагательных мужского рода во множественном числе.",
-      },
-      {
-        id: "lesson10b",
-        title: "10б. Какав одмор жели Павле. Будущее время (I).",
-      },
-    ],
-  },
-  {
-    id: "lesson11",
-    title: "УРОК 11. ХРАНА",
-    subLessons: [
-      {
-        id: "lesson11a",
-        title: "11а. Павле у ресторану. Повелительное наклонение.",
-      },
-      {
-        id: "lesson11b",
-        title: "11б. О Зорановом хобију.",
-      },
-    ],
-  },
-  {
-    id: "lesson12",
-    title: "УРОК 12. КУПОВИНА ОДЕЋЕ",
-    subLessons: [
-      {
-        id: "lesson12a",
-        title: "12а. Павле у куповини. Будущее II.",
-      },
-      {
-        id: "lesson12b",
-        title: "12б. Милица у куповини. Степени сравнения прилагательных.",
-      },
-    ],
-  },
-  {
-    id: "lesson13",
-    title: "УРОК 13. ПРАЗНИЦИ",
-    subLessons: [
-      {
-        id: "lesson13a",
-        title: "13а. Павле и Горан у посластичарници. Условное наклонение.",
-      },
-      {
-        id: "lesson13b",
-        title:
-          "13б. Божић у Србији. Склонение существительных женского рода на согласный.",
-      },
-    ],
-  },
-  {
-    id: "lesson14",
-    title: "УРОК 14. ЗНАМЕНИТОСТИ",
-    subLessons: [
-      {
-        id: "lesson14a",
-        title: "14а. Горан води Павла у разгледање града.",
-      },
-      {
-        id: "lesson14b",
-        title:
-          "14б. Горан и Павле у кафани „Знак питања“. Склонение существительных с неравносложной основой.",
-      },
-      {
-        id: "lesson14c",
-        title: "14в. Павле у Црној Гори.",
-      },
-    ],
-  },
-  {
-    id: "lesson15",
-    title: "УРОК 15. ЗДРАВЉЕ И СПОРТ",
-    subLessons: [
-      {
-        id: "lesson15a",
-        title: "15а. Павле и Славко у авиону. Аорист.",
-      },
-      {
-        id: "lesson15b",
-        title:
-          "15б. Горан и Милан иду на дерби. Склонение существительных на -лац и существительных мужского рода иностранного происхождения.",
-      },
-    ],
-  },
-  {
-    id: "lesson16",
-    title: "УПРАЖНЕНИЯ НА ПОВТОРЕНИЕ РАЗНЫХ ГРАММАТИЧЕСКИХ ТЕМ",
-    subLessons: [
-      {
-        id: "lesson16a",
-        title: "Грамматический материал",
-      },
-      {
-        id: "lesson16b",
-        title: "Сербская культура",
-      },
-      {
-        id: "lesson16с",
-        title: "Тесты по уровням",
-      },
-    ],
-  },
-];
-
-function Home() {
-  return (
-    <div className="min-h-screen bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white p-6">
-      <h1 className="text-3xl font-semibold mb-6 text-center">
-        ПОЛНЫЙ КУРС СЕРБСКОГО ЯЗЫКА
-      </h1>
-      <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 max-w-5xl mx-auto ">
-        {lessons.map((lesson) => (
-          <div
-            key={lesson.id}
-            className="block  p-4 hover:shadow-md transition bg-zinc-50 dark:bg-zinc-800"
-          >
-            <Link
-              to={`/${lesson.id}`}
-              className="block  p-4 transition bg-zinc-50 dark:bg-zinc-800"
-            >
-              <h2 className="text-lg font-medium hover:text-blue-600">
-                {lesson.title}
-              </h2>
-            </Link>
-            {/* Подпункты */}
-            {lesson.subLessons && (
-              <div className="mt-4">
-                <ul className="list-disc list-inside text-sm text-zinc-600 dark:text-zinc-300">
-                  {lesson.subLessons.map((subLesson) => (
-                    <li key={subLesson.id}>
-                      {/* Ссылка на подпункт внутри карточки */}
-                      <Link
-                        to={`/${lesson.id}#${subLesson.id}`} // Ссылка на подпункт внутри страницы урока
-                        className="hover:text-blue-600"
-                      >
-                        {subLesson.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-// Массив уроков
 const lessonsMap = {
-  lesson01: <Lesson01 />,
-  lesson02: <Lesson02 />,
+  lesson01: lazy(() => import("./pages/Lesson01")),
+  lesson02: lazy(() => import("./pages/Lesson02")),
+  notFound: lazy(() => import("./pages/NotFound")),
 };
 
-// Компонент для отображения уроков на основе маршрута
-function LessonRouter() {
+function LessonWrapper() {
   const { id } = useParams();
-  let LessonComponent;
-
-  // Ленивая загрузка компонента урока на основе id
-  switch (id) {
-    case "lesson01":
-      LessonComponent = Lesson01;
-      break;
-    case "lesson02":
-      LessonComponent = Lesson02;
-      break;
-    default:
-      return <div className="p-4 text-center text-red-600">Урок не найден</div>;
-  }
+  const LessonComponent = lessonsMap[id] || lessonsMap.notFound;
 
   return (
-    <Suspense fallback={<div>Загрузка урока...</div>}>
+    <Suspense fallback={<LoaderOverlay />}>
       <LessonComponent />
     </Suspense>
   );
 }
 
-// Создание роутера
-const router = createBrowserRouter([
-  { path: "/", element: <Home /> },
-  { path: "/:id", element: <LessonRouter /> }, // Динамический маршрут для уроков
-]);
-
-// Основной компонент приложения
 function App() {
+  const router = createBrowserRouter([
+    { path: "/", element: <Home /> },
+    { path: "/:id", element: <LessonWrapper /> },
+    {
+      path: "*",
+      element: (
+        <Suspense fallback={<LoaderOverlay />}>
+          <lessonsMap.notFound />
+        </Suspense>
+      ),
+    },
+  ]);
+
   return <RouterProvider router={router} />;
 }
 

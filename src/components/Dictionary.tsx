@@ -1,6 +1,6 @@
 import React from "react";
 
-const Dictionary = ({ phrases }) => {
+const Glossary = ({ phrases }) => {
     return (
         <div className="bg-gradient-to-r from-blue-100 via-blue-50 to-blue-100 p-6 rounded-lg shadow-lg mb-6">
             <h3 className="font-semibold text-2xl text-center text-gray-800 mb-4">
@@ -20,5 +20,5 @@ const Dictionary = ({ phrases }) => {
     );
 };
 
-export default Dictionary;
+export default Glossary;
 
