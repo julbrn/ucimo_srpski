@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from "react";
 import { RouterProvider, createBrowserRouter, useParams } from "react-router";
 import Home from "./pages/Home";
 import LoaderOverlay from "./components/LoaderOverlay";
+import ThemeToggler from "./components/ThemeToggler";
 
 const lessonsMap = {
   lesson01: lazy(() => import("./pages/Lesson01")),
@@ -34,7 +35,12 @@ function App() {
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <ThemeToggler />
+      <RouterProvider router={router} />
+    </>
+  );
 }
 
 export default App;
