@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import { ShieldCheckIcon } from "@heroicons/react/24/outline";
+import { ShieldExclamationIcon } from "@heroicons/react/24/outline";
 
 function InputCheck({ correct }) {
   const [value, setValue] = useState("");
@@ -18,11 +20,15 @@ function InputCheck({ correct }) {
         <div className="flex w-full items-center">
           <input
             type="text"
-            className={`border rounded-md px-4 py-3 bg-zinc-100 w-full transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 ${checked
-              ? isCorrect
-                ? "border-green-500 ring-green-500"
-                : "border-red-500 ring-red-500"
-              : "border-zinc-300"
+            className={`border border-transparent rounded-md px-4 py-3 
+              bg-[var(--color-light-field)] dark:bg-[var(--color-dark-field)] 
+              w-full transition-all duration-300 ease-in-out 
+              focus:outline-none focus:ring-2 focus:ring-[var(--color-link-primary)] focus:ring-opacity-50 
+              ${checked
+                ? isCorrect
+                  ? "border-lime-500 ring-1 ring-lime-500"
+                  : "border-rose-500 ring-1 ring-rose-500"
+                : ""
               }`}
             value={value}
             onChange={(e) => {
@@ -36,31 +42,32 @@ function InputCheck({ correct }) {
             }}
             placeholder="Введите ответ"
           />
+
           {/* Кнопка с текстом "Проверить" */}
           <button
-            className="ml-3 p-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 ease-in-out"
+            className="ml-3 p-3 bg-[var(--color-link)] text-white rounded-md focus:outline-none focus:ring-2 transition-all duration-300 ease-in-out cursor-pointer"
             onClick={handleCheck}
           >
             Проверить
           </button>
 
           {/* Галочка и крестик */}
-          <div className="ml-3 flex items-center">
+          <div className="ml-2 w-10 h-8 flex items-center justify-center">
             {checked && isCorrect && (
-              <span className="text-green-600 text-lg transition-transform duration-300 transform scale-125">✅</span>
+              <ShieldCheckIcon className="size-6 text-lime-500" />
             )}
             {checked && !isCorrect && (
-              <span className="text-red-600 text-lg transition-transform duration-300 transform scale-125">❌</span>
+              <ShieldExclamationIcon className="size-6 text-rose-500" />
             )}
           </div>
         </div>
 
         {/* Место для текста с правильным ответом под инпутом */}
         {checked && !isCorrect && (
-          <div className="absolute w-full -bottom-2 left-0 flex">
-            <span className="text-sm text-red-500">
-              Правильный ответ: <strong>{correct}</strong>
-            </span>
+          <div className="absolute w-full -bottom-3 left-0 flex">
+            <p className="text-sm text-rose-500">Правильный ответ:
+              <span className="text-base text-white">&nbsp;{correct}</span>
+            </p>
           </div>
         )}
       </div>
