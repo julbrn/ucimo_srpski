@@ -4,10 +4,14 @@
 @theme {
     --color-dark-background: oklch(24.78% 0.000 0);
     --color-dark-field: oklch(30.52% 0.000 0);
+    --color-dark-field-hover: oklch(35.52% 0.000 0);
     --color-dark-font: oklch(95.21% 0.000 0);
     --color-light-field: oklch(96.72% 0.000 0);
+    --color-light-field-hover: oklch(91.72% 0.000 0);
     --color-light-font: oklch(15.91% 0.000 0);
-    --color-link: oklch(0.66 0.22 258);
+    --color-button: oklch(0.66 0.22 258);
+    --color-button-hover: oklch(0.66 0.32 258);
+    --color-button-disabled: oklch(0.66 0.2 258);
 }
 
 html {

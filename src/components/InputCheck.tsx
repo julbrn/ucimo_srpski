@@ -45,7 +45,7 @@ function InputCheck({ correct }) {
 
           {/* Кнопка с текстом "Проверить" */}
           <button
-            className="ml-3 p-3 bg-[var(--color-link)] text-white rounded-md focus:outline-none focus:ring-2 transition-all duration-300 ease-in-out cursor-pointer"
+            className="ml-3 p-3 bg-[var(--color-button)] hover:bg-[var(--color-button-hover)] text-white rounded-md focus:outline-none focus:ring-2 transition-all duration-300 ease-in-out cursor-pointer"
             onClick={handleCheck}
           >
             Проверить

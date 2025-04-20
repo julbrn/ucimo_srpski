@@ -36,10 +36,10 @@ function App() {
   ]);
 
   return (
-    <>
+    <div className="text-[var(--color-light-font)] dark:text-white bg-white dark:bg-[var(--color-dark-background)] ">
       <ThemeToggler />
       <RouterProvider router={router} />
-    </>
+    </div>
   );
 }
 
