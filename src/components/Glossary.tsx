@@ -1,9 +1,9 @@
 import React from "react";
 
-const RememberBlock = ({ title, phrases }) => {
+const Glossary = ({ title, phrases }) => {
     return (
-        <div className=" bg-sky-200 p-4 rounded-xl shadow-md mb-6 text-[var(--text-light)]">
-            <h3 className="font-semibold text-lg mt-6 mb-4 ">{title}</h3>
+        <div className=" bg-green-200 p-4 rounded-xl shadow-md mb-6 text-[var(--text-light)]">
+            <h3 className="font-semibold text-lg mt-6 mb-4 ">СЛОВАРЬ</h3>
             <div className="space-y-2">
                 {phrases.map((phrase, index) => (
                     <p key={index} className="mb-2">
@@ -15,4 +15,5 @@ const RememberBlock = ({ title, phrases }) => {
     );
 };
 
-export default RememberBlock;
+export default Glossary;
+

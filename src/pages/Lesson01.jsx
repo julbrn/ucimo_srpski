@@ -57,7 +57,7 @@ function Lesson01() {
   );
 
   return (
-    <div className="min-h-screen p-6 max-w-5xl mx-auto relative">
+    <div className="min-h-screen p-6 max-w-3xl mx-auto relative">
       <ArrowBack />
       <h2 className="text-2xl font-bold mb-4">
         УРОК 1. Алфавит и правила письма. Основные фонетические особенности
@@ -70,28 +70,27 @@ function Lesson01() {
       </p>
 
       <h3 className="font-semibold mt-6 mb-2">Таблица алфавита</h3>
-      <table className="table-auto border mb-6 text-sm w-full">
-        <thead className="bg-[var(--color-light-field)] dark:bg-[var(--color-dark-field)]">
+      <table className="bg-[var(--field-light)] dark:bg-[var(--field-dark)] table-auto w-full max-w-[650px] text-sm mb-6 overflow-hidden rounded-xl border">
+        <thead>
           <tr>
-            <th className="border px-4 py-2 text-left">Кириллица</th>
-            <th className="border px-4 py-2 text-left">Латиница</th>
-            <th className="border px-4 py-2 text-left">Произношение</th>
+            <th className="px-2 py-4 text-center">Кириллица</th>
+            <th className="px-2 py-4 text-center">Латиница</th>
+            <th className="px-2 py-4 text-center">Произношение</th>
           </tr>
         </thead>
         <tbody>
           {alphabetData.map(([cyr, lat, pron], idx) => (
             <tr
               key={idx}
-              className="even:bg-[var(--color-light-field)] dark:even:bg-[var(--color-dark-field)]"
+              className="even:bg-[var(--field-light-hover)] dark:even:bg-[var(--field-dark-hover)]"
             >
-              <td className="border px-4 py-3">{cyr}</td>
-              <td className="border px-4 py-3">{lat}</td>
-              <td className="border px-4 py-3">{pron}</td>
+              <td className="px-2 py-3 text-center">{cyr}</td>
+              <td className="px-2 py-3 text-center">{lat}</td>
+              <td className="px-2 py-3 text-center">{pron}</td>
             </tr>
           ))}
         </tbody>
       </table>
-
       <h3 className="font-semibold text-lg mt-6 mb-2">
         Упражнение 1. Перепишите латиницей следующие слова:
       </h3>
@@ -1040,7 +1039,6 @@ function Lesson01() {
       <RememberBlock
         title={rememberData[0].lessonTitle}
         phrases={rememberData[0].phrases}
-        lessonNumber={rememberData[0].lessonNumber}
       />
     </div>
   );

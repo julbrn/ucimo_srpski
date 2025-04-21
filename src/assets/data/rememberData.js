@@ -1,6 +1,6 @@
 export const rememberData = [
     {
-        lessonNumber: 1, // Номер урока
+        lessonNumber: 1,
         lessonTitle: "ЗАПОМНИТЕ. Приветствие, прощание, выражение благодарности",
         phrases: [
             { original: "Добар дан!", translation: "Добрый день! Здравствуй, здравствуйте!" },
@@ -18,16 +18,17 @@ export const rememberData = [
         ]
     },
     {
-        lessonNumber: 2, // Номер урока
-        lessonTitle: "ЗАПОМНИТЕ. Произношение мягких и твердых согласных",
+        lessonNumber: 2,
+        lessonTitle: "ЗАПОМНИТЕ. Вопросы при знакомстве",
         phrases: [
-            { original: "читати", translation: "читать" },
-            { original: "јуче", translation: "вчера" },
-            { original: "учитељ", translation: "учитель" },
-            { original: "учити", translation: "учить" },
-            { original: "често", translation: "часто" },
-            { original: "човек", translation: "человек" },
-            { original: "чај", translation: "чай" },
+            { original: "Како се зовете?", translation: "Как вас зовут?" },
+            { original: "Како се зовеш?", translation: "Как тебя зовут?" },
+            { original: "Одакле сте Ви?", translation: "Откуда вы?" },
+            { original: "Одакле си ти?", translation: "Откуда ты?" },
+            { original: "Шта сте Ви (по националности)?", translation: "Кто вы по национальности?" },
+            { original: "Шта си ти (по националности)?", translation: "Кто ты по национальности?" },
+            { original: "Шта сте Ви (по професији, по занимању)?", translation: "Кто вы по профессии?" },
+            { original: "Шта си ти (по професији, по занимању)?", translation: "Кто ты по профессии?" },
         ]
     },
 ];

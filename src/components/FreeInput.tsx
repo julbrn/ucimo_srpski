@@ -6,7 +6,7 @@ function FreeInput({ placeholder }) {
 
   return (
     <textarea
-      className="w-full bg-[var(--color-light-field)] dark:bg-[var(--color-dark-field)] rounded p-4"
+      className="w-full bg-[var(--field-light)] dark:bg-[var(--field-dark)] rounded-xl p-4 text-[var(--text-light)] dark:text-[var(--text-dark)]"
       rows={4}
       placeholder={placeholder}
       value={value}

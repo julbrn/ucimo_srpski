@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { ShieldCheckIcon } from "@heroicons/react/24/outline";
-import { ShieldExclamationIcon } from "@heroicons/react/24/outline";
+import { ShieldCheckIcon, ShieldExclamationIcon } from "@heroicons/react/24/outline";
 
 function InputCheck({ correct }) {
   const [value, setValue] = useState("");
@@ -16,14 +15,13 @@ function InputCheck({ correct }) {
   return (
     <div className="flex flex-col items-center mb-5 p-0 relative w-full max-w-md">
       <div className="flex flex-col items-stretch w-full p-0 space-y-3">
-        {/* Инпут с анимацией изменения рамки */}
         <div className="flex w-full items-center">
           <input
             type="text"
-            className={`border border-transparent rounded-md px-4 py-3 
-              bg-[var(--color-light-field)] dark:bg-[var(--color-dark-field)] 
+            className={`border border-transparent rounded-lg px-4 py-3 
+              bg-[var(--field-light)] dark:bg-[var(--field-dark)] 
               w-full transition-all duration-300 ease-in-out 
-              focus:outline-none focus:ring-2 focus:ring-[var(--color-link-primary)] focus:ring-opacity-50 
+              focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:ring-opacity-50 
               ${checked
                 ? isCorrect
                   ? "border-lime-500 ring-1 ring-lime-500"
@@ -43,15 +41,13 @@ function InputCheck({ correct }) {
             placeholder="Введите ответ"
           />
 
-          {/* Кнопка с текстом "Проверить" */}
           <button
-            className="ml-3 p-3 bg-[var(--color-button)] hover:bg-[var(--color-button-hover)] text-white rounded-md focus:outline-none focus:ring-2 transition-all duration-300 ease-in-out cursor-pointer"
+            className="ml-3 p-3 bg-[var(--accent)] hover:bg-[var(--accent-hover)] text-white rounded-lg focus:outline-none focus:ring-2 transition-all duration-300 ease-in-out cursor-pointer"
             onClick={handleCheck}
           >
             Проверить
           </button>
 
-          {/* Галочка и крестик */}
           <div className="ml-2 w-10 h-8 flex items-center justify-center">
             {checked && isCorrect && (
               <ShieldCheckIcon className="size-6 text-lime-500" />
@@ -62,7 +58,6 @@ function InputCheck({ correct }) {
           </div>
         </div>
 
-        {/* Место для текста с правильным ответом под инпутом */}
         {checked && !isCorrect && (
           <div className="absolute w-full -bottom-3 left-0 flex">
             <p className="text-sm text-rose-500">Правильный ответ:
@@ -76,5 +71,3 @@ function InputCheck({ correct }) {
 }
 
 export default InputCheck;
-
-

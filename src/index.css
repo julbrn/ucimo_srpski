@@ -2,18 +2,54 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --color-dark-background: oklch(24.78% 0.000 0);
-    --color-dark-field: oklch(30.52% 0.000 0);
-    --color-dark-field-hover: oklch(35.52% 0.000 0);
-    --color-dark-font: oklch(95.21% 0.000 0);
-    --color-light-field: oklch(96.72% 0.000 0);
-    --color-light-field-hover: oklch(91.72% 0.000 0);
-    --color-light-font: oklch(15.91% 0.000 0);
-    --color-button: oklch(0.66 0.22 258);
-    --color-button-hover: oklch(0.66 0.32 258);
-    --color-button-disabled: oklch(0.66 0.2 258);
+    /* Backgrounds */
+    --bg-dark: oklch(24.78% 0.000 0);
+    --bg-light: oklch(96.72% 0.000 0);
+
+    /* Fields */
+    --field-dark: oklch(30.52% 0.000 0);
+    --field-dark-hover: oklch(35.52% 0.000 0);
+    --field-light: oklch(96.72% 0.000 0);
+    --field-light-hover: oklch(91.72% 0.000 0);
+
+    /* Text */
+    --text-dark: oklch(87.61% 0.000 0);
+    --text-light: oklch(15.91% 0.000 0);
+
+    /* Accent (Sky blue) */
+    --accent: oklch(0.66 0.22 258);
+    --accent-hover: oklch(0.66 0.32 258);
+    --accent-disabled: oklch(0.66 0.2 258);
 }
+
 
 html {
     font-size: 18px;
+    font-weight: 400;
+    font-family: "YS Text Regular Regular", sans-serif;
+}
+
+@font-face {
+    font-family: "YS Text Regular";
+    src: url("/src/assets/fonts/YS\ Text-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "YS Text Regular";
+    src: url("/src/assets/fonts/YS\ Text-Regular\ Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "YS Text Regular";
+    src: url("/src/assets/fonts/YS\ Text-Regular\ Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: bold;
+    font-display: swap;
 }
