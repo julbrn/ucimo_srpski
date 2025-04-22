@@ -5,6 +5,7 @@ import RememberBlock from "../components/RememberBlock";
 import { rememberData } from "../assets/data/rememberData";
 import ArrowBack from "../components/ArrowBack";
 import { useState, useCallback, useMemo } from "react";
+import NextLessonButton from "../components/NextLessonButton";
 
 function Lesson01() {
   const [currentAudio, setCurrentAudio] = useState(null);
@@ -1040,6 +1041,8 @@ function Lesson01() {
         title={rememberData[0].lessonTitle}
         phrases={rememberData[0].phrases}
       />
+
+      <NextLessonButton nextId="lesson02" />
     </div>
   );
 }

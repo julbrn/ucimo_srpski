@@ -20,6 +20,13 @@
     --accent: oklch(0.66 0.22 258);
     --accent-hover: oklch(0.66 0.32 258);
     --accent-disabled: oklch(0.66 0.2 258);
+
+    --remember-bg: oklch(92% 0.05 260);
+    /* мягкий голубой */
+    --glossary-bg: oklch(95% 0.05 75);
+    /* мягкий песочно-жёлтый */
+    --important-bg: oklch(93% 0.05 10);
+    /* мягкий коралловый */
 }
 
 

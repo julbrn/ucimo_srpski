@@ -3,6 +3,7 @@ import { RouterProvider, createBrowserRouter, useParams } from "react-router";
 import Home from "./pages/Home";
 import LoaderOverlay from "./components/LoaderOverlay";
 import ThemeToggler from "./components/ThemeToggler";
+import ScrollToTop from "./components/ScrollToTop";
 
 const lessonsMap = {
   lesson01: lazy(() => import("./pages/Lesson01")),
@@ -17,6 +18,7 @@ function LessonWrapper() {
   return (
     <Suspense fallback={<LoaderOverlay />}>
       <LessonComponent />
+      <ScrollToTop />
     </Suspense>
   );
 }

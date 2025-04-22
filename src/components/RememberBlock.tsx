@@ -2,7 +2,7 @@ import React from "react";
 
 const RememberBlock = ({ title, phrases }) => {
     return (
-        <div className=" bg-sky-200 p-4 rounded-xl shadow-md mb-6 text-[var(--text-light)]">
+        <div className="bg-[var(--remember-bg)] p-4 rounded-xl shadow-md mb-6 text-[var(--text-light)]">
             <h3 className="font-semibold text-lg mt-6 mb-4 ">{title}</h3>
             <div className="space-y-2">
                 {phrases.map((phrase, index) => (
