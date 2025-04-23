@@ -2,7 +2,11 @@ import React from "react";
 import { useState } from "react";
 import { ShieldCheckIcon, ShieldExclamationIcon } from "@heroicons/react/24/outline";
 
-function InputCheck({ correct }) {
+type InputCheckProps = {
+  correct: string;
+};
+
+const InputCheck: React.FC<InputCheckProps> = ({ correct }) => {
   const [value, setValue] = useState("");
   const [checked, setChecked] = useState(false);
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-function FreeInput({ placeholder }) {
+function FreeInput({ placeholder }: { placeholder: string }) {
   const [value, setValue] = useState("");
 
   return (

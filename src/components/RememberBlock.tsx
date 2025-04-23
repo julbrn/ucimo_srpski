@@ -1,6 +1,16 @@
 import React from "react";
 
-const RememberBlock = ({ title, phrases }) => {
+type Phrase = {
+    original: string;
+    translation: string;
+};
+
+type RememberBlockProps = {
+    title: string;
+    phrases: Phrase[];
+};
+
+const RememberBlock: React.FC<RememberBlockProps> = ({ title, phrases }) => {
     return (
         <div className="bg-[var(--remember-bg)] p-4 rounded-xl shadow-md mb-6 text-[var(--text-light)]">
             <h3 className="font-semibold text-lg mt-6 mb-4 ">{title}</h3>

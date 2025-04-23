@@ -5,14 +5,14 @@ import LoaderOverlay from "./components/LoaderOverlay";
 import ThemeToggler from "./components/ThemeToggler";
 import ScrollToTop from "./components/ScrollToTop";
 
-const lessonsMap = {
+const lessonsMap: Record<string, React.LazyExoticComponent<React.ComponentType>> = {
   lesson01: lazy(() => import("./pages/Lesson01")),
   lesson02: lazy(() => import("./pages/Lesson02")),
   notFound: lazy(() => import("./pages/NotFound")),
 };
 
 function LessonWrapper() {
-  const { id } = useParams();
+  const { id } = useParams<{ id: string }>();
   const LessonComponent = lessonsMap[id] || lessonsMap.notFound;
 
   return (

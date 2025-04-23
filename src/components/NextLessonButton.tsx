@@ -1,6 +1,7 @@
+import React from "react";
 import { Link } from "react-router";
 
-function NextLessonButton({ nextId }) {
+function NextLessonButton({ nextId }: { nextId: string }) {
   if (!nextId) return null;
 
   return (

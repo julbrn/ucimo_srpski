@@ -1,9 +1,18 @@
 import React from "react";
 
-const Glossary = ({ title, phrases }) => {
+type Phrase = {
+    original: string;
+    translation: string;
+};
+
+type GlossaryProps = {
+    phrases: Phrase[];
+};
+
+const Glossary: React.FC<GlossaryProps> = ({ phrases }) => {
     return (
-        <div className=" bg-[var(--glossary-bg)] p-4 rounded-xl shadow-md mb-6 text-[var(--text-light)]">
-            <h3 className="font-semibold text-lg mt-6 mb-4 ">СЛОВАРЬ</h3>
+        <div className="bg-[var(--glossary-bg)] p-4 rounded-xl shadow-md mb-6 text-[var(--text-light)]">
+            <h3 className="font-semibold text-lg mt-6 mb-4">СЛОВАРЬ</h3>
             <div className="space-y-2">
                 {phrases.map((phrase, index) => (
                     <p key={index} className="mb-2">

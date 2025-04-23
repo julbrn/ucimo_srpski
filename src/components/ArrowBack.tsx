@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router";
 import { ArrowLongLeftIcon } from "@heroicons/react/24/solid";
+import React from "react";
 
-const ArrowBack = () => {
+const ArrowBack: React.FC = () => {
   const [showArrow, setShowArrow] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
 

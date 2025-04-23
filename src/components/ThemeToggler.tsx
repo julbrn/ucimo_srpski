@@ -1,7 +1,8 @@
+import React from "react";
 import { useTheme } from "../ThemeProvider";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 
-export default function ThemeToggler() {
+const ThemeToggler: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
@@ -19,4 +20,5 @@ export default function ThemeToggler() {
       )}
     </button>
   );
-}
+};
+export default ThemeToggler;

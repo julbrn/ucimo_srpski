@@ -2,6 +2,17 @@ import React from "react";
 import { Link } from "react-router";
 import { lessonsData } from "../assets/data/lessonsData";
 
+type SubLesson = {
+  id: string;
+  title: string;
+};
+
+type Lesson = {
+  id: string;
+  title: string;
+  subLessons?: SubLesson[];
+};
+
 export default function Home() {
   return (
     <div className="min-h-screen p-6">
@@ -9,7 +20,7 @@ export default function Home() {
         ПОЛНЫЙ КУРС СЕРБСКОГО ЯЗЫКА
       </h1>
       <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 max-w-4xl mx-auto">
-        {lessonsData.map((lesson) => (
+        {lessonsData.map((lesson: Lesson) => (
           <div
             key={lesson.id}
             className="block p-4 rounded-xl hover:shadow-md transition bg-[var(--field-light)] hover:bg-[var(--field-light-hover)] cursor-pointer 
@@ -23,7 +34,7 @@ export default function Home() {
             {lesson.subLessons && (
               <div className="mt-4">
                 <ul className="list-disc list-inside text-sm dark:text-[var(--text-dark)]">
-                  {lesson.subLessons.map((subLesson) => (
+                  {lesson.subLessons.map((subLesson: SubLesson) => (
                     <li key={subLesson.id} className="mb-4">
                       <Link
                         to={`/${lesson.id}#${subLesson.id}`}

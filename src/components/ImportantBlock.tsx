@@ -1,7 +1,7 @@
 import React from "react";
 import { ExclamationTriangleIcon } from "@heroicons/react/24/solid";
 
-const ImportantBlock = ({ children }) => {
+const ImportantBlock = ({ children }: { children: React.ReactNode }) => {
     return (
         <div className="bg-[var(--important-bg)] border-l-4 border-red-300 dark:border-red-400 p-4 rounded-xl shadow text-[var(--text-light)] mb-6">
 
