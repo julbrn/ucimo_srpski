@@ -5,22 +5,19 @@ import RememberBlock from "../components/RememberBlock";
 import { rememberData } from "../assets/data/rememberData";
 import ArrowBack from "../components/ArrowBack";
 import { useState, useCallback, useMemo } from "react";
+import React from "react";
 import NextLessonButton from "../components/NextLessonButton";
 
 function Lesson01() {
-  const [currentAudio, setCurrentAudio] = useState(null);
+  const [currentAudio, setCurrentAudio] = useState<number | null>(null);
   // Обработчик для воспроизведения
-  const handleAudioPlay = useCallback(
-    (audioIndex) => {
-      if (currentAudio !== null && currentAudio !== audioIndex) {
-        const prevAudio = document.getElementById(`audio-${currentAudio}`);
-        if (prevAudio) prevAudio.pause();
-      }
-      setCurrentAudio(audioIndex);
-    },
-    [currentAudio]
-  );
-
+  const handleAudioPlay = useCallback((audioIndex: number) => {
+    if (currentAudio !== null && currentAudio !== audioIndex) {
+      const prevAudio = document.getElementById(`audio-${currentAudio}`) as HTMLAudioElement | null;
+      if (prevAudio) prevAudio.pause();
+    }
+    setCurrentAudio(audioIndex);
+  }, [currentAudio]);
   const alphabetData = useMemo(
     () => [
       ["А а", "A a", "а"],
@@ -53,7 +50,7 @@ function Lesson01() {
       ["Ч ч", "Č č", "твердый ч"],
       ["Џ џ", "Dž dž", "дж"],
       ["Ш ш", "Š š", "ш"],
-    ],
+    ] as const,
     []
   );
 

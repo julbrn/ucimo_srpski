@@ -7,8 +7,19 @@ import { glossaryData } from "../assets/data/GlossaryData";
 import ImportantBlock from "../components/ImportantBlock";
 import RememberBlock from "../components/RememberBlock";
 import { rememberData } from "../assets/data/rememberData";
+import React from "react";
+import { useState, useCallback } from "react";
 
 function Lesson02() {
+  const [currentAudio, setCurrentAudio] = useState<number | null>(null);
+  // Обработчик для воспроизведения
+  const handleAudioPlay = useCallback((audioIndex: number) => {
+    if (currentAudio !== null && currentAudio !== audioIndex) {
+      const prevAudio = document.getElementById(`audio-${currentAudio}`) as HTMLAudioElement | null;
+      if (prevAudio) prevAudio.pause();
+    }
+    setCurrentAudio(audioIndex);
+  }, [currentAudio]);
   return (
     <div className="min-h-screen p-6 max-w-3xl mx-auto relative text-[var(--text-light)] dark:text-[var(--text-dark)]">
       <ArrowBack />
@@ -25,7 +36,8 @@ function Lesson02() {
         на паспортный контроль, где его неожиданно стали подробно расспрашивать.
       </p>
 
-      <AudioPlayer src="/src/assets/audio/005.-Urok-02_2a.mp3" />
+      <AudioPlayer src="/src/assets/audio/005.-Urok-02_2a.mp3" index={0}
+        onPlay={handleAudioPlay} />
 
       <div className="bg-[var(--field-light)] dark:bg-[var(--field-dark)] p-4 rounded-xl shadow mb-6">
         <p>
@@ -148,7 +160,8 @@ function Lesson02() {
         phrases={rememberData[1].phrases}
       />
       <h3 className="font-semibold text-lg mt-6 mb-2">Диалог при знакомстве</h3>
-      <AudioPlayer src="/src/assets/audio/006.-Urok-02_2a_Dialog-pri-znakomstve.mp3" />
+      <AudioPlayer src="/src/assets/audio/006.-Urok-02_2a_Dialog-pri-znakomstve.mp3" index={1}
+        onPlay={handleAudioPlay} />
       <div className="bg-[var(--field-light)] dark:bg-[var(--field-dark)] p-4 rounded-xl shadow mb-6">
         <p>
           — Како се зовеш? Или Како се зовете?
