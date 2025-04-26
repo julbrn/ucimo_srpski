@@ -178,28 +178,28 @@ function Lesson02() {
       </h3>
       <div className="space-y-4 mb-6">
         <p className="mb-2">
-          — <InputCheck correct="Како" /> зовете?
+          — <InputCheck correct="Како" mode="inline" /> зовете?
         </p>
         <p className="mb-2">
-          — Ја <InputCheck correct="сам" /> Павле.
+          — Ја <InputCheck correct="сам" mode="inline" /> Павле.
         </p>
         <p className="mb-2">
-          — Одакле сте <InputCheck correct="Ви" />?
+          — Одакле сте <InputCheck correct="Ви" mode="inline" />?
         </p>
         <p className="mb-2">
-          — Ја <InputCheck correct="сам" /> из Русије.
+          — Ја <InputCheck correct="сам" mode="inline" /> из Русије.
         </p>
         <p className="mb-2">
-          — Шта <InputCheck correct="сте" /> Ви?
+          — Шта <InputCheck correct="сте" mode="inline" /> Ви?
         </p>
         <p className="mb-2">
-          — <InputCheck correct="ја" /> сам Рус.
+          — <InputCheck correct="ја" mode="inline" /> сам Рус.
         </p>
         <p className="mb-2">
-          — Шта <InputCheck correct="сте" /> по професији?
+          — Шта <InputCheck correct="сте" mode="inline" /> по професији?
         </p>
         <p className="mb-2">
-          — Ја сам <InputCheck correct="програмер" />.
+          — Ја сам <InputCheck correct="програмер" mode="inline" />.
         </p>
       </div>
 
