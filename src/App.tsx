@@ -7,7 +7,14 @@ import ScrollToTop from "./components/ScrollToTop";
 
 const lessonsMap: Record<string, React.LazyExoticComponent<React.ComponentType>> = {
   lesson01: lazy(() => import("./pages/Lesson01")),
-  lesson02: lazy(() => import("./pages/Lesson02")),
+  lesson02a: lazy(() => import("./pages/lesson02/Lesson02a")),
+  lesson02b: lazy(() => import("./pages/lesson02/Lesson02b")),
+  // lesson02c: lazy(() => import("./pages/lesson02/Lesson02b")),
+  // lesson02d: lazy(() => import("./pages/lesson02/Lesson02d")),
+  // lesson03a: lazy(() => import("./pages/lesson03/Lesson03a")),
+  // lesson03b: lazy(() => import("./pages/lesson03/Lesson03b")),
+  // lesson03c: lazy(() => import("./pages/lesson03/Lesson03c")),
+  // и т.д.
   notFound: lazy(() => import("./pages/NotFound")),
 };
 

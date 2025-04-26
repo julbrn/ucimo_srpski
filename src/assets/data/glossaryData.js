@@ -1,7 +1,7 @@
 // lessonData.js
 export const glossaryData = [
     {
-        lessonNumber: 2,
+        id: 1,
         phrases: [
             { original: "пасош", translation: "паспорт" },
             { original: "како се зовете", translation: "как вас зовут" },
@@ -14,15 +14,20 @@ export const glossaryData = [
         ]
     },
     {
-        lessonNumber: 2,
+        id: 2,
         phrases: [
-            { original: "читати", translation: "читать" },
-            { original: "јуче", translation: "вчера" },
-            { original: "учитељ", translation: "учитель" },
-            { original: "учити", translation: "учить" },
-            { original: "често", translation: "часто" },
-            { original: "човек", translation: "человек" },
-            { original: "чај", translation: "чай" },
+            { original: "презиме", translation: "фамилия" },
+            { original: "инжењер", translation: "инженер" },
+            { original: "први пут", translation: "первый раз" },
+            { original: "кажу да", translation: "говорят, что" },
+            { original: "врло", translation: "очень" },
+            { original: "велик", translation: "большой" },
+            { original: "леп", translation: "красивый" },
+            { original: "земља", translation: "страна" },
+            { original: "град", translation: "город" },
+            { original: "као", translation: "как" },
+            { original: "мали", translation: "маленький" },
+            { original: "име", translation: "имя" },
         ]
     },
 ];
