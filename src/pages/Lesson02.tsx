@@ -237,6 +237,90 @@ function Lesson02() {
         <p>Италија — Шпанац / Шпањолка</p>
         <p>Кина — Бугарин / Бугарка</p>
       </div>
+      <h3 className="font-semibold text-lg mt-6 mb-2">
+        Упражнение 5. Заполните пропуски
+      </h3>
+      <p className="mb-4">
+        Обращайте внимание на окончания существительных, обозначающих страны.
+        В конструкции «из какой-то страны» у названия страны должно быть окончание -е.
+        Также обратите внимание на то, что слово, обозначающее национальность, в сербском языке пишется с заглавной буквы!
+      </p>
+      <p className="mb-4 font-semibold">
+        Образец: Ја сам из Русије, ја сам Рус (Рускиња).
+      </p>
+
+      <div className="space-y-4 mb-6">
+        <p className="mb-2">
+          1. Ја сам из Пољске, ја сам <InputCheck correct="Пољак" mode="inline" />.
+        </p>
+        <p className="mb-2">
+          2. Ја сам из <InputCheck correct="Србије" mode="inline" />, ја сам Српкиња.
+        </p>
+        <p className="mb-2">
+          3. Ја сам из Бугарске, ја сам <InputCheck correct="Бугарин" mode="inline" />.
+        </p>
+        <p className="mb-2">
+          4. Ја сам из <InputCheck correct="Шпаније" mode="inline" />, ја сам Шпањолка.
+        </p>
+        <p className="mb-2">
+          5. Ја сам из Италије, ја сам <InputCheck correct="Италијан" mode="inline" />.
+        </p>
+        <p className="mb-2">
+          6. Ја сам из <InputCheck correct="Кине" mode="inline" />, ја сам Кинез.
+        </p>
+        <p className="mb-2">
+          7. Ја сам из Француске, ја сам <InputCheck correct="Француз" mode="inline" />.
+        </p>
+        <p className="mb-2">
+          8. Ја сам из <InputCheck correct="Енглеске" mode="inline" />, ја сам Енглескиња.
+        </p>
+        <p className="mb-2">
+          9. Ја сам из Америке, ја сам <InputCheck correct="Американац" mode="inline" />.
+        </p>
+      </div>
+
+      <h3 className="font-semibold text-lg mt-6 mb-2">
+        Упражнение 6. Заполните пропуски
+      </h3>
+      <p className="mb-4">
+        Вставьте названия стран и национальностей, как в предыдущем упражнении.
+        Обращайте внимание на окончания названий стран.
+        Слово ово («это») помогает представить нашего знакомого.
+      </p>
+      <p className="mb-4 font-semibold">
+        Образец: Ово је Марфа, она је из Русије, она је Рускиња.
+      </p>
+
+      <div className="space-y-4 mb-6">
+        <p className="mb-2">
+          1. Ово је Пшемислав, он је из <InputCheck correct="Пољске" mode="inline" />, он је <InputCheck correct="Пољак" mode="inline" />.
+        </p>
+        <p className="mb-2">
+          2. Ово је Мишељ, она је из <InputCheck correct="Француске" mode="inline" />, она је <InputCheck correct="Францускиња" mode="inline" />.
+        </p>
+        <p className="mb-2">
+          3. Ово је Џон, он је из <InputCheck correct="Енглеске" mode="inline" />, он је <InputCheck correct="Енглез" mode="inline" />.
+        </p>
+        <p className="mb-2">
+          4. Ово је Зоран, он је из <InputCheck correct="Србије" mode="inline" />, он је <InputCheck correct="Србин" mode="inline" />.
+        </p>
+        <p className="mb-2">
+          5. Ово је Лучија, она је из <InputCheck correct="Италије" mode="inline" />, она је <InputCheck correct="Италијанка" mode="inline" />.
+        </p>
+        <p className="mb-2">
+          6. Ово је Марта, она је из <InputCheck correct="Бугарске" mode="inline" />, она је <InputCheck correct="Бугарка" mode="inline" />.
+        </p>
+        <p className="mb-2">
+          7. Ово је Фернандо, он је из <InputCheck correct="Шпаније" mode="inline" />, он је <InputCheck correct="Шпанац" mode="inline" />.
+        </p>
+        <p className="mb-2">
+          8. Ово је Боб, он је из <InputCheck correct="Америке" mode="inline" />, он је <InputCheck correct="Американац" mode="inline" />.
+        </p>
+        <p className="mb-2">
+          9. Ово је Јуј, она је из <InputCheck correct="Кине" mode="inline" />, она је <InputCheck correct="Кинескиња" mode="inline" />.
+        </p>
+      </div>
+
     </div>
   );
 }
