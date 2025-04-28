@@ -1039,7 +1039,8 @@ function Lesson01() {
         phrases={rememberData[0].phrases}
       />
 
-      <NextLessonButton nextId="lesson02" />
+      <NextLessonButton nextId="lesson02a" />
+
     </div>
   );
 }

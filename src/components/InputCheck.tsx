@@ -67,11 +67,9 @@ const InputCheck: React.FC<InputCheckProps> = ({ correct, mode = "block" }) => {
             <ShieldExclamationIcon className="size-5 text-rose-500" />
           )}
         </div>
-
-        {/* ПРАВИЛЬНЫЙ ОТВЕТ - абсолютное позиционирование */}
         <div className="absolute top-full left-0 w-max mt-1 transition-opacity duration-300 ease-in-out" style={{ opacity: checked && !isCorrect ? 1 : 0 }}>
           <p className="text-xs text-rose-500 leading-snug">
-            Правильный ответ:{" "}
+            Правильно:{" "}
             <span className="font-semibold">{correct}</span>
           </p>
         </div>

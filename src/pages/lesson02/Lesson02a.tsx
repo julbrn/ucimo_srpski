@@ -10,6 +10,8 @@ import { rememberData } from "../../assets/data/rememberData";
 import React from "react";
 import { useState, useCallback } from "react";
 import NextLessonButton from "../../components/NextLessonButton";
+import MatchExercise from "../../components/MatchExercise";
+import { MatchExerciseData } from "../../assets/data/matchData";
 
 function Lesson02a() {
   const [currentAudio, setCurrentAudio] = useState<number | null>(null);
@@ -223,19 +225,7 @@ function Lesson02a() {
         Упражнение 4. Подберите к названию страны название национальности.
         Обратите внимание, что в упражнении названия перепутаны.
       </p>
-      <div className="bg-[var(--field-light)] dark:bg-[var(--field-dark)] p-4 rounded-xl shadow mb-6 text-sm">
-        <p>Русија — Француз / Францускиња</p>
-        <p>Србија — Енглез / Енглескиња</p>
-        <p>Француска — Србин / Српкиња</p>
-        <p>Немачка — Кинез / Кинескиња</p>
-        <p>Енглеска — Рус / Рускиња</p>
-        <p>Америка (САД) — Пољак / Пољакиња</p>
-        <p>Шпанија — Американац / Американка</p>
-        <p>Пољска — Италијан / Италијанка</p>
-        <p>Бугарска — Немац / Немица</p>
-        <p>Италија — Шпанац / Шпањолка</p>
-        <p>Кина — Бугарин / Бугарка</p>
-      </div>
+      <MatchExercise data={MatchExerciseData.exercise02a_4} />
       <h3 className="font-semibold text-lg mt-6 mb-2">
         Упражнение 5. Заполните пропуски
       </h3>
@@ -320,6 +310,11 @@ function Lesson02a() {
         </p>
       </div>
       <h3 className="font-semibold text-lg mt-6 mb-2">
+        Упражнение 7. Подберите к названию страны название столицы.
+        Обратите внимание, что в упражнении названия перепутаны.
+      </h3>
+      <MatchExercise data={MatchExerciseData.exercise02a_7} />
+      <h3 className="font-semibold text-lg mt-6 mb-2">
         Упражнение 8. Заполните пропуски
       </h3>
       <p className="mb-4">
@@ -359,6 +354,17 @@ function Lesson02a() {
           9. Ти си из Париза, ти си из <InputCheck correct="Француске" mode="inline" />.
         </p>
       </div>
+      <h3 className="font-semibold text-lg mt-6 mb-2">
+        Названия профессий
+      </h3>
+      <p className="mb-2">
+        Упражнение 9. Подберите русские эквиваленты к сербским названиям
+        профессий. В упражнении эквиваленты перепутаны.
+      </p>
+      <p className="mb-4">Обратите внимание, что в сербском языке чаще,
+        чем в русском, есть особые названия профессий
+        для женщин.</p>
+      <MatchExercise data={MatchExerciseData.exercise02a_9} />
       <h3 className="font-semibold text-lg mt-6 mb-2">
         Упражнение 10. Прочитайте текст
       </h3>
