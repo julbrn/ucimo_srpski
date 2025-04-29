@@ -127,7 +127,9 @@ function Lesson02v() {
                     Пример: «Твой брат — врач?» — <em>Је ли твој брат лекар?</em> Ответ: <em>Јесте</em>.
                 </p>
             </GrammarBlock>
-            <ExerciseBlock title="Упражнение 3. Напишите вопросы, подобные представленным в образце.">
+            <ExerciseBlock title="Упражнение 3. Напишите вопросы, подобные представленным
+в образце, каждый раз заменяя содержащиеся в образце названия
+на другие.">
                 <div className="space-y-6">
                     <p><strong>а) Образец: Јесам ли у Риму?</strong></p>
                     <FreeInput placeholder="1." />
@@ -235,7 +237,8 @@ function Lesson02v() {
                 </div>
             </ExerciseBlock>
 
-            <ExerciseBlock title="Упражнение 9. Замените вопросы с 'да ли' на вопросы с частицей 'ли'.">
+            <ExerciseBlock title="Упражнение 9. Вопросы из предыдущего упражнения замените
+на вопросы с частицей ли.">
                 <div className="space-y-6">
                     <p>1. <InputCheck correct="Јеси ли из Америке?" /></p>
                     <p>2. <InputCheck correct="Је ли Ана из Кине?" /></p>
@@ -244,18 +247,21 @@ function Lesson02v() {
                     <p>5. <InputCheck correct="Јесу ли они из Пољске?" /></p>
                 </div>
             </ExerciseBlock>
-
-            <ExerciseBlock title="Упражнение 10. Составьте опросник для прибывающего в страну.">
+            <ExerciseBlock title="Упражнение 10. Составьте опросник из 5–7 пунктов на сербском для прибывающего в страну. Обязательно включите перечисленные ниже вопросы. Затем заполните эту анкету.">
                 <div className="space-y-6">
+                    <p>1. Как вас зовут?</p>
                     <InputCheck correct="Како се зовете?" />
+                    <p>2. Откуда вы?</p>
                     <InputCheck correct="Одакле сте?" />
+                    <p>3. Кто вы по национальности?</p>
                     <InputCheck correct="Шта сте Ви?" />
+                    <p>4. Кто вы по профессии?</p>
                     <InputCheck correct="Шта сте Ви по професији?" />
                 </div>
             </ExerciseBlock>
 
 
-            <NextLessonButton nextId="lesson02d" />
+            <NextLessonButton nextId="lesson02g" />
 
 
         </div>
