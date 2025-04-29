@@ -19,46 +19,48 @@ interface MatchExerciseProps {
 export default function MatchExercise({ data }: MatchExerciseProps) {
     const { leftOptions, rightOptions, correctMatches } = data;
 
-    const [selectedLeft, setSelectedLeft] = useState<string | null>(null);
+    const [selected, setSelected] = useState<{ id: string, side: 'left' | 'right' } | null>(null);
     const [matches, setMatches] = useState<Record<string, string>>({});
     const [correctlyMatched, setCorrectlyMatched] = useState<Set<string>>(new Set());
     const [incorrectlyMatched, setIncorrectlyMatched] = useState<Set<string>>(new Set());
 
-    const handleLeftClick = (id: string) => {
-        setSelectedLeft(id);
-    };
+    const handleClick = (id: string, side: 'left' | 'right') => {
+        if (!selected) {
+            setSelected({ id, side });
+        } else {
+            if (selected.side === side) {
+                setSelected({ id, side }); // замена текущего выбора
+            } else {
+                const leftId = side === 'left' ? id : selected.id;
+                const rightId = side === 'right' ? id : selected.id;
 
-    const handleRightClick = (id: string) => {
-        if (selectedLeft) {
-            setMatches(prev => {
-                const newMatches = { ...prev, [selectedLeft]: id };
-
-                setIncorrectlyMatched(prevIncorrect => {
-                    const updatedIncorrect = new Set(prevIncorrect);
-                    updatedIncorrect.delete(selectedLeft);
-                    return updatedIncorrect;
+                setMatches(prev => {
+                    const newMatches = { ...prev, [leftId]: rightId };
+                    setIncorrectlyMatched(prevIncorrect => {
+                        const updated = new Set(prevIncorrect);
+                        updated.delete(leftId);
+                        return updated;
+                    });
+                    return newMatches;
                 });
 
-                return newMatches;
-            });
-            setSelectedLeft(null);
+                setSelected(null);
+            }
         }
     };
 
     const checkAnswers = () => {
-        const newCorrect = new Set(correctlyMatched);
-        const newIncorrect = new Set(incorrectlyMatched);
+        const newCorrect = new Set<string>();
+        const newIncorrect = new Set<string>();
 
         for (const [leftId, rightId] of Object.entries(matches)) {
             if (correctMatches[leftId] === rightId) {
                 newCorrect.add(leftId);
-                newIncorrect.delete(leftId);
             } else {
-                if (!newCorrect.has(leftId)) {
-                    newIncorrect.add(leftId);
-                }
+                newIncorrect.add(leftId);
             }
         }
+
         setCorrectlyMatched(newCorrect);
         setIncorrectlyMatched(newIncorrect);
     };
@@ -67,7 +69,7 @@ export default function MatchExercise({ data }: MatchExerciseProps) {
         setMatches({});
         setCorrectlyMatched(new Set());
         setIncorrectlyMatched(new Set());
-        setSelectedLeft(null);
+        setSelected(null);
     };
 
     const getArrowColor = (leftId: string) => {
@@ -77,22 +79,22 @@ export default function MatchExercise({ data }: MatchExerciseProps) {
     };
 
     return (
-        <div className="flex flex-col items-center p-6 min-h-screen text-[var(--text-light)] dark:text-[var(--text-dark)]">
-            <h1 className="text-lg mb-6 text-center">Соотнесите пары</h1>
+        <div className="flex flex-col items-center min-h-screen text-[var(--text-light)] dark:text-[var(--text-dark)]">
+            <h1 className="mb-2 sm:mb-6 text-center font-bold">Соотнесите пары</h1>
 
             <div className="flex relative w-full max-w-5xl justify-between">
                 {/* Левая колонка */}
-                <div className="flex flex-col gap-8">
+                <div className="flex flex-col gap-2 sm:gap-4">
                     {leftOptions.map(item => (
                         <div
                             key={item.id}
                             id={item.id}
-                            className={`p-4 w-48 border rounded-xl cursor-pointer text-center transition 
-                ${selectedLeft === item.id
+                            className={`p-2 sm:p-4 w-30 sm:w-48 border rounded-xl cursor-pointer text-center text-sm sm:text-base transition
+                                ${selected?.id === item.id && selected.side === 'left'
                                     ? 'border-[var(--accent)] bg-[var(--field-light-hover)] dark:bg-[var(--field-dark-hover)]'
                                     : 'border-[var(--field-light)] dark:border-[var(--field-dark)] bg-[var(--field-light)] dark:bg-[var(--field-dark)]'
                                 }`}
-                            onClick={() => handleLeftClick(item.id)}
+                            onClick={() => handleClick(item.id, 'left')}
                         >
                             {item.text}
                         </div>
@@ -100,15 +102,17 @@ export default function MatchExercise({ data }: MatchExerciseProps) {
                 </div>
 
                 {/* Правая колонка */}
-                <div className="flex flex-col gap-8">
+                <div className="flex flex-col gap-2 sm:gap-4">
                     {rightOptions.map(item => (
                         <div
                             key={item.id}
                             id={item.id}
-                            className="p-4 w-64 border rounded-xl cursor-pointer text-center transition
-                border-[var(--field-light)] dark:border-[var(--field-dark)] bg-[var(--field-light)] dark:bg-[var(--field-dark)] 
-                hover:bg-[var(--field-light-hover)] dark:hover:bg-[var(--field-dark-hover)]"
-                            onClick={() => handleRightClick(item.id)}
+                            className={`p-2 sm:p-4 w-30 sm:w-64 border rounded-xl cursor-pointer text-center text-sm sm:text-base transition
+                                ${selected?.id === item.id && selected.side === 'right'
+                                    ? 'border-[var(--accent)] bg-[var(--field-light-hover)] dark:bg-[var(--field-dark-hover)]'
+                                    : 'border-[var(--field-light)] dark:border-[var(--field-dark)] bg-[var(--field-light)] dark:bg-[var(--field-dark)]'
+                                }`}
+                            onClick={() => handleClick(item.id, 'right')}
                         >
                             {item.text}
                         </div>
@@ -121,36 +125,39 @@ export default function MatchExercise({ data }: MatchExerciseProps) {
                         key={leftId}
                         start={leftId}
                         end={rightId}
+                        startAnchor="right"
+                        endAnchor="left"
                         color={getArrowColor(leftId)}
                         strokeWidth={3}
                         path="smooth"
+                        curveness={0.4}
                         showHead
                         headSize={6}
                     />
                 ))}
             </div>
 
-            {/* Кнопки действий */}
-            <div className="flex gap-4 mt-10">
+            {/* Кнопки */}
+            <div className="flex gap-4 mt-5 sm:mt-10">
                 <button
                     onClick={checkAnswers}
-                    className="px-6 py-2 rounded-xl font-semibold transition
-            bg-[var(--accent)] hover:bg-[var(--accent-hover)] text-white cursor-pointer"
+                    className="px-4 py-2 sm:px-6 rounded-xl font-semibold transition
+                    bg-[var(--accent)] hover:bg-[var(--accent-hover)] text-white cursor-pointer text-sm sm:text-base"
                 >
                     Проверить
                 </button>
                 <button
                     onClick={resetAll}
-                    className="px-6 py-2 rounded-xl font-semibold transition
-    bg-rose-500 hover:bg-rose-600 text-white cursor-pointer"
+                    className="px-4 py-2 sm:px-6 rounded-xl font-semibold transition
+                    bg-rose-500 hover:bg-rose-600 text-white cursor-pointer text-sm sm:text-base"
                 >
                     Сбросить
                 </button>
             </div>
 
-            {/* Результат проверки */}
+            {/* Результат */}
             {(correctlyMatched.size + incorrectlyMatched.size === leftOptions.length) && (
-                <div className="mt-6 text-xl">
+                <div className="mt-6 text-lg sm:text-xl">
                     {incorrectlyMatched.size === 0
                         ? 'Все верно! 🎉'
                         : 'Есть ошибки. Попробуйте ещё раз.'}

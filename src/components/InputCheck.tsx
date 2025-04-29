@@ -19,13 +19,19 @@ const InputCheck: React.FC<InputCheckProps> = ({ correct, mode = "block" }) => {
   };
 
   return (
-    <div className={mode === "inline" ? "inline-flex flex-col items-center relative" : "flex flex-col items-center mb-5 p-0 relative w-full max-w-md"}>
-      <div className={mode === "inline" ? "relative flex items-center mb-4" : "relative flex items-center w-full"}>
+    <div className={mode === "inline"
+      ? "inline-flex flex-wrap items-center gap-1 relative max-w-full"
+      : "flex flex-col items-center mb-5 p-0 relative w-full max-w-md"}>
+
+      <div className={mode === "inline"
+        ? "relative flex items-center"
+        : "relative flex items-center w-full"}>
+
         <input
           type="text"
           className={`rounded-lg
             ${mode === "inline"
-              ? "text-sm w-[80px] border-b border-gray-400 bg-[var(--field-light)] dark:bg-[var(--field-dark)] ocus:ring-0 px-1 py-0.5"
+              ? "text-sm min-w-0 w-auto max-w-[120px] border-b border-gray-400 bg-[var(--field-light)] dark:bg-[var(--field-dark)] px-1 py-0.5"
               : "border border-transparent bg-[var(--field-light)] dark:bg-[var(--field-dark)] w-full px-4 py-3 transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:ring-opacity-50"
             }
             ${checked
@@ -44,9 +50,7 @@ const InputCheck: React.FC<InputCheckProps> = ({ correct, mode = "block" }) => {
               handleCheck();
             }
           }}
-          onBlur={() => {
-            handleCheck();
-          }}
+          onBlur={handleCheck}
           placeholder={mode === "inline" ? "..." : "Введите ответ"}
         />
 
@@ -67,10 +71,11 @@ const InputCheck: React.FC<InputCheckProps> = ({ correct, mode = "block" }) => {
             <ShieldExclamationIcon className="size-5 text-rose-500" />
           )}
         </div>
-        <div className="absolute top-full left-0 w-max mt-1 transition-opacity duration-300 ease-in-out" style={{ opacity: checked && !isCorrect ? 1 : 0 }}>
+
+        <div className="absolute top-full left-0 mt-1 max-w-xs break-words transition-opacity duration-300 ease-in-out"
+          style={{ opacity: checked && !isCorrect ? 1 : 0 }}>
           <p className="text-xs text-rose-500 leading-snug">
-            Правильно:{" "}
-            <span className="font-semibold">{correct}</span>
+            Правильно: <span className="font-semibold">{correct}</span>
           </p>
         </div>
       </div>

@@ -12,11 +12,11 @@ type RememberBlockProps = {
 
 const RememberBlock: React.FC<RememberBlockProps> = ({ title, phrases }) => {
     return (
-        <div className="bg-[var(--remember-bg)] p-4 rounded-xl shadow-md mb-6 text-[var(--text-light)]">
-            <h3 className="font-semibold text-lg mt-6 mb-4 ">{title}</h3>
+        <div className="bg-[var(--remember-bg)] p-4 sm:p-6 space-y-4 rounded-xl shadow-md  text-[var(--text-light)]">
+            <h3 className="font-semibold text-lg ">{title}</h3>
             <div className="space-y-2">
                 {phrases.map((phrase, index) => (
-                    <p key={index} className="mb-2">
+                    <p key={index}>
                         <span className="font-semibold">{phrase.original}</span> — {phrase.translation}
                     </p>
                 ))}

@@ -44,16 +44,16 @@ export const MatchExerciseData: Record<string, MatchExerciseItem> = {
   },
   exercise02a_7: {
     leftOptions: [
-      { id: "rusija", text: "Русија" },
-      { id: "srbija", text: "Србија" },
-      { id: "francuska", text: "Француска" },
-      { id: "engleska", text: "Енглеска" },
-      { id: "amerika", text: "Америка (САД)" },
-      { id: "spanija", text: "Шпанија" },
-      { id: "poljska", text: "Пољска" },
-      { id: "bugarska", text: "Бугарска" },
-      { id: "italija", text: "Италија" },
-      { id: "kina", text: "Кина" },
+      { id: "rusija2", text: "Русија" },
+      { id: "srbija2", text: "Србија" },
+      { id: "francuska2", text: "Француска" },
+      { id: "engleska2", text: "Енглеска" },
+      { id: "amerika2", text: "Америка (САД)" },
+      { id: "spanija2", text: "Шпанија" },
+      { id: "poljska2", text: "Пољска" },
+      { id: "bugarska2", text: "Бугарска" },
+      { id: "italija2", text: "Италија" },
+      { id: "kina2", text: "Кина" },
     ],
     rightOptions: [
       { id: "beograd", text: "Београд" },
@@ -68,16 +68,16 @@ export const MatchExerciseData: Record<string, MatchExerciseItem> = {
       { id: "varšava", text: "Варшава" },
     ],
     correctMatches: {
-      rusija: "moskva",
-      srbija: "beograd",
-      francuska: "pariz",
-      engleska: "london",
-      amerika: "vašington",
-      spanija: "madrid",
-      poljska: "varšava",
-      bugarska: "sofiја",
-      italija: "rim",
-      kina: "peking",
+      rusija2: "moskva",
+      srbija2: "beograd",
+      francuska2: "pariz",
+      engleska2: "london",
+      amerika2: "vašington",
+      spanija2: "madrid",
+      poljska2: "varšava",
+      bugarska2: "sofiја",
+      italija2: "rim",
+      kina2: "peking",
     },
   },
   exercise02a_9: {
@@ -94,16 +94,16 @@ export const MatchExerciseData: Record<string, MatchExerciseItem> = {
       { id: "zubar", text: "зубар / зубарка" },
     ],
     rightOptions: [
-      { id: "pravnik1", text: "јурист" }, // юрист
-      { id: "biznismen1", text: "бизнисмен" }, // бизнесмен
-      { id: "menadzer1", text: "менаџер" }, // менеджер
-      { id: "gradjevinac1", text: "строитељ" }, // строитель
-      { id: "cistac1", text: "уборщик (дворник) / уборщица" }, // уборщик
-      { id: "frizer1", text: "парикмахер" }, // парикмахер
-      { id: "lekar1", text: "врач" }, // врач
-      { id: "ucitelj1", text: "учитељ / учитељица" }, // учитель
-      { id: "programer1", text: "программист" }, // программист
-      { id: "zubar1", text: "зубной врач" }, // зубной врач
+      { id: "pravnik1", text: "юрист" },
+      { id: "biznismen1", text: "бизнесмен" },
+      { id: "gradjevinac1", text: "строитель" },
+      { id: "cistac1", text: "уборщик (дворник) / уборщица" },
+      { id: "lekar1", text: "врач" },
+      { id: "menadzer1", text: "менеджер" },
+      { id: "zubar1", text: "зубной врач" },
+      { id: "frizer1", text: "парикмахер" },
+      { id: "ucitelj1", text: "учитель / учительница" },
+      { id: "programer1", text: "программист" },
     ],
     correctMatches: {
       ucitelj: "ucitelj1",
