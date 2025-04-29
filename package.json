@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "home": "https://julbrn.github.io/tailwind_project/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
