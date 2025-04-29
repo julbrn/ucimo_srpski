@@ -1,1 +1,0 @@
-import{r as s,j as l}from"./index-DlxPKXAO.js";function o({placeholder:t}){const[e,a]=s.useState("");return l.jsx("textarea",{className:"w-full bg-[var(--field-light)] dark:bg-[var(--field-dark)] rounded-xl p-4 text-[var(--text-light)] dark:text-[var(--text-dark)]",rows:2,placeholder:t,value:e,onChange:r=>a(r.target.value)})}export{o as F};
