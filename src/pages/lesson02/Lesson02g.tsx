@@ -30,7 +30,7 @@ function Lesson02g() {
             <h3 className="font-semibold text-lg">2г. Шта је то?</h3>
 
             <p>Павел продолжал размышлять.</p>
-            <AudioPlayer src="/src/assets/audio/009.-Urok-02_2g.mp3" index={0} onPlay={handleAudioPlay} />
+            <AudioPlayer src={`${import.meta.env.BASE_URL}/assets/audio/009.-Urok-02_2g.mp3`} index={0} onPlay={handleAudioPlay} />
             <TextBlock>
                 Шта је то? Зашто сам интересантан и сумњив пасошкој контроли? Који је разлог? Каква је то контрола? Зар сам ја позната личност?
             </TextBlock>
@@ -57,7 +57,7 @@ function Lesson02g() {
                 <strong>леп, топао, хладан</strong> (хороший, теплый, холодный) и т. д. Вопрос <strong>Који је данас дан?</strong> «Какой сегодня день?» требует ответа: <strong>среда, субота, недеља</strong> и т. д.</p></ImportantBlock>
 
             <ExerciseBlock title="Упражнение 1. Ответьте на вопросы.">
-                <AudioPlayer src="src/assets/audio/010.-Urok-02_2g_Uprazhnenie_1.mp3" index={1} onPlay={handleAudioPlay} />
+                <AudioPlayer src={`${import.meta.env.BASE_URL}assets/audio/010.-Urok-02_2g_Uprazhnenie_1.mp3`} index={1} onPlay={handleAudioPlay} />
                 <div className="space-y-6">
                     <p className="mb-2">1. Ко је интересантан службенику на пасошкој контроли?</p>
                     <InputCheck correct="Павле је интересантан службенику на пасошкој контроли." />
@@ -269,7 +269,7 @@ function Lesson02g() {
             <p>Прочитайте и переведите текст, используя приложенный
                 к тексту словарь.</p>
             <h3 className="font-semibold text-lg text-center mb-2">Упознавање</h3>
-            <AudioPlayer src="src/assets/audio/011.-Urok-02_Srpska-kultura.-Upoznava_e.mp3" index={2} onPlay={handleAudioPlay} />
+            <AudioPlayer src={`${import.meta.env.BASE_URL}assets/audio/011.-Urok-02_Srpska-kultura.-Upoznava_e.mp3`} index={2} onPlay={handleAudioPlay} />
             <TextBlock>
                 <p>Када се упознају, Срби се обавезно рукују.
                     Руку прво може пружити мушкарац или жена.
@@ -297,7 +297,7 @@ function Lesson02g() {
                 phrases={glossaryData.find((g) => g.id === 5)?.phrases || []}
             />
             <h3 className="font-semibold text-lg text-center mb-2">Како се Срби упознају</h3>
-            <AudioPlayer src="src/assets/audio/012.-Urok-02_Kako-se-Srbi-upoznaju.mp3" index={3} onPlay={handleAudioPlay} />
+            <AudioPlayer src={`${import.meta.env.BASE_URL}assets/audio/012.-Urok-02_Kako-se-Srbi-upoznaju.mp3`} index={3} onPlay={handleAudioPlay} />
             <TextBlock>
                 <p>— Зоран. Драго ми је.</p>
                 <p>— Младен. Такође. Ово је је мој колега Дејан.</p>

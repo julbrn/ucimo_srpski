@@ -27,7 +27,7 @@ function Lesson02v() {
             <h3 className="font-semibold text-lg">2в. Да ли је све у реду?</h3>
 
             <p>Пока Павла расспрашивали на паспортном контроле, он размышлял.</p>
-            <AudioPlayer src="/src/assets/audio/008.-Urok-02_2v.mp3" index={0} onPlay={handleAudioPlay} />
+            <AudioPlayer src={`${import.meta.env.BASE_URL}assets/audio/008.-Urok-02_2v.mp3`} index={0} onPlay={handleAudioPlay} />
             <p>
                 Врло сам интересантан пасошкој контроли. Ја нисам позната личност. Чудно је. Да ли је све у реду? Да ли сам им сумњив?
             </p>

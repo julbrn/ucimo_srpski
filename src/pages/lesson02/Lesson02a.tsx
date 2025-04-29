@@ -42,7 +42,7 @@ function Lesson02a() {
           на паспортный контроль, где его неожиданно стали подробно расспрашивать.
         </p>
 
-        <AudioPlayer src="/src/assets/audio/005.-Urok-02_2a.mp3" index={0} onPlay={handleAudioPlay} />
+        <AudioPlayer src={`${import.meta.env.BASE_URL}assets/audio/005.-Urok-02_2a.mp3`} index={0} onPlay={handleAudioPlay} />
         <p className="leading-8 pt-4">
           — Добар дан. Пасош, молим вас.
           <br />— Добар дан, изволите.
@@ -163,7 +163,7 @@ function Lesson02a() {
       />
       <TextBlock>
         <h3 className="font-semibold text-lg ">Диалог при знакомстве</h3>
-        <AudioPlayer src="/src/assets/audio/006.-Urok-02_2a_Dialog-pri-znakomstve.mp3" index={1}
+        <AudioPlayer src={`${import.meta.env.BASE_URL}assets/audio/006.-Urok-02_2a_Dialog-pri-znakomstve.mp3`} index={1}
           onPlay={handleAudioPlay} />
         <p className="leading-8 pt-4">
           — Како се зовеш? Или Како се зовете?

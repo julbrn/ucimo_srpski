@@ -92,7 +92,7 @@ function Lesson01() {
         </tbody>
       </table>
       <ExerciseBlock title=" Упражнение 1. Перепишите латиницей следующие слова:"> <AudioPlayer
-        src="/src/assets/audio/001.-Urok-01_Uprazhnenie_1.mp3"
+        src={`${import.meta.env.BASE_URL}assets/audio/001.-Urok-01_Uprazhnenie_1.mp3`}
         index={0}
         onPlay={handleAudioPlay}
       />
@@ -491,11 +491,12 @@ function Lesson01() {
           </div>
         </div>
       </ExerciseBlock>
-      <ExerciseBlock title="Упражнение 2. Перепишите кириллицей следующие слова:"> <AudioPlayer
-        src="src/assets/audio/002.-Urok-01_Uprazhnenie_2.mp3"
-        index={1}
-        onPlay={handleAudioPlay}
-      />
+      <ExerciseBlock title="Упражнение 2. Перепишите кириллицей следующие слова:">
+        <AudioPlayer
+          src={`${import.meta.env.BASE_URL}assets/audio/002.-Urok-01_Uprazhnenie_2.mp3`}
+          index={1}
+          onPlay={handleAudioPlay}
+        />
         <p className="font-medium ">а) обратите внимание на lj и nj:</p>
         <div className="space-y-2 ">
           <div className="gap-4">
@@ -898,11 +899,12 @@ function Lesson01() {
         </p>
         <FreeInput placeholder="Введите имя и фамилию на кириллице и латинице" />
       </ExerciseBlock>
-      <ExerciseBlock title="     Упражнение 4. Прочитайте следующие слова:"><AudioPlayer
-        src="src/assets/audio/003.-Urok-01_Uprazhnenie_4.mp3"
-        index={2}
-        onPlay={handleAudioPlay}
-      />
+      <ExerciseBlock title="     Упражнение 4. Прочитайте следующие слова:">
+        <AudioPlayer
+          src={`${import.meta.env.BASE_URL}assets/audio/003.-Urok-01_Uprazhnenie_4.mp3`}
+          index={2}
+          onPlay={handleAudioPlay}
+        />
 
         <div className="space-y-6">
           {/* Пункт а */}

@@ -25,7 +25,7 @@ function Lesson02b() {
             <h3 id="lesson02b" className="font-semibold text-lg">
                 2б. Павле прича о себи и о Србији (Павел рассказывает о себе и о Сербии)
             </h3>
-            <AudioPlayer src="/src/assets/audio/007.-Urok-02_2b.mp3" index={0} onPlay={handleAudioPlay} />
+            <AudioPlayer src={`${import.meta.env.BASE_URL}assets/audio/007.-Urok-02_2b.mp3`} index={0} onPlay={handleAudioPlay} />
 
             <div className="bg-[var(--field-light)] dark:bg-[var(--field-dark)] p-4 rounded-xl shadow">
                 <p className="mb-2">Ја сам Павле. Моје презиме је Ровински. Ја нисам Србин. Ја сам Рус. Ја сам из Москве, из Русије. Ја сам програмер, нисам инжењер.</p>
