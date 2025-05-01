@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ShieldCheckIcon, ShieldExclamationIcon } from "@heroicons/react/24/outline";
+import { v4 as uuidv4 } from "uuid";
 
 type InputCheckProps = {
   correct: string;
@@ -9,20 +10,47 @@ type InputCheckProps = {
 const InputCheck: React.FC<InputCheckProps> = ({ correct, mode = "block" }) => {
   const [value, setValue] = useState("");
   const [checked, setChecked] = useState(false);
+  const [localKey, setLocalKey] = useState<string | null>(null);
+
   const normalizeCyrillic = (input: string) => {
     return input
-      .replace(/j/g, "ј") // латинская j → кириллическая ј
-      .replace(/J/g, "Ј"); // латинская J → кириллическая Ј (если нужно)
+      .replace(/j/g, "ј")
+      .replace(/J/g, "Ј");
   };
+
+  // Генерация и сохранение уникального ключа для инпута
+  useEffect(() => {
+    const keyBase = `inputcheck:${correct}`;
+    const existingKey = localStorage.getItem(`${keyBase}:uuid`);
+    const uuid = existingKey || uuidv4();
+    if (!existingKey) {
+      localStorage.setItem(`${keyBase}:uuid`, uuid);
+    }
+    setLocalKey(uuid);
+
+    const savedValue = localStorage.getItem(`inputcheck:value:${uuid}`);
+    if (savedValue) {
+      setValue(savedValue);
+      setChecked(true);
+    }
+  }, [correct]);
 
   const isCorrect =
     normalizeCyrillic(value.trim().toLowerCase()) ===
     normalizeCyrillic(correct.trim().toLowerCase());
 
-
   const handleCheck = () => {
     if (value.trim() !== "") {
       setChecked(true);
+    }
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newValue = e.target.value;
+    setValue(newValue);
+    setChecked(false);
+    if (localKey) {
+      localStorage.setItem(`inputcheck:value:${localKey}`, newValue);
     }
   };
 
@@ -40,7 +68,7 @@ const InputCheck: React.FC<InputCheckProps> = ({ correct, mode = "block" }) => {
           className={`rounded-lg
             ${mode === "inline"
               ? "text-sm min-w-0 w-auto max-w-[120px] border-b border-gray-400 bg-[var(--field-light)] dark:bg-[var(--field-dark)] px-1 py-0.5"
-              : "border border-transparent bg-[var(--field-light)] dark:bg-[var(--field-dark)] w-full px-4 py-3 transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:ring-opacity-50"
+              : "max-w-[220px] border border-transparent bg-[var(--field-light)] dark:bg-[var(--field-dark)] w-full px-4 py-3 transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:ring-opacity-50"
             }
             ${checked
               ? isCorrect
@@ -49,10 +77,7 @@ const InputCheck: React.FC<InputCheckProps> = ({ correct, mode = "block" }) => {
               : ""
             }`}
           value={value}
-          onChange={(e) => {
-            setValue(e.target.value);
-            setChecked(false);
-          }}
+          onChange={handleChange}
           onKeyDown={(e) => {
             if (e.key === "Enter") {
               handleCheck();
@@ -77,6 +102,9 @@ const InputCheck: React.FC<InputCheckProps> = ({ correct, mode = "block" }) => {
           )}
           {checked && !isCorrect && (
             <ShieldExclamationIcon className="size-5 text-rose-500" />
+          )}
+          {!checked && (
+            <ShieldExclamationIcon className="size-5 opacity-0 text-rose-500" />
           )}
         </div>
 
