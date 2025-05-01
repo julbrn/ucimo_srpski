@@ -9,8 +9,16 @@ type InputCheckProps = {
 const InputCheck: React.FC<InputCheckProps> = ({ correct, mode = "block" }) => {
   const [value, setValue] = useState("");
   const [checked, setChecked] = useState(false);
+  const normalizeCyrillic = (input: string) => {
+    return input
+      .replace(/j/g, "ј") // латинская j → кириллическая ј
+      .replace(/J/g, "Ј"); // латинская J → кириллическая Ј (если нужно)
+  };
 
-  const isCorrect = value.trim().toLowerCase() === correct.trim().toLowerCase();
+  const isCorrect =
+    normalizeCyrillic(value.trim().toLowerCase()) ===
+    normalizeCyrillic(correct.trim().toLowerCase());
+
 
   const handleCheck = () => {
     if (value.trim() !== "") {

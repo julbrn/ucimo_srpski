@@ -178,7 +178,7 @@ function Lesson02a() {
       <ExerciseBlock title="Упражнение 1. Вставьте пропущенные слова">
         <div className="space-y-6">
           <p >
-            — <InputCheck correct="Како" mode="inline" /> зовете?
+            — <InputCheck correct="Како се" mode="inline" /> зовете?
           </p>
           <p >
             — Ја <InputCheck correct="сам" mode="inline" /> Павле.
@@ -196,7 +196,7 @@ function Lesson02a() {
             — <InputCheck correct="ја" mode="inline" /> сам Рус.
           </p>
           <p >
-            — Шта <InputCheck correct="сте" mode="inline" /> по професији?
+            — Шта <InputCheck correct="сте Ви" mode="inline" /> по професији?
           </p>
           <p >
             — Ја сам <InputCheck correct="програмер" mode="inline" />.
