@@ -134,4 +134,23 @@ export const rememberData = [
       },
     ],
   },
+  {
+    lessonNumber: 5,
+    lessonTitle: "ЗАПОМНИТЕ. На каком языке вы говорите?",
+    phrases: [
+      {
+        original: "Да ли говорите руски?",
+        translation: "Вы говорите по-русски?",
+      },
+      {
+        original: "Да ли говорите енглески?",
+        translation: "Вы говорите по-английски?",
+      },
+      {
+        original: "Да ли говорите српски?",
+        translation: "Вы говорите по-сербски?",
+      },
+      { original: "Мало.", translation: "Немного." },
+    ],
+  },
 ];

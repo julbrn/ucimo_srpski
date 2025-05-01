@@ -147,4 +147,47 @@ export const glossaryData = [
       },
     ],
   },
+  {
+    id: 6,
+    phrases: [
+      {
+        original: "долазити, ја долазим",
+        translation: "приезжать / приходить, я прихожу/приезжаю",
+      },
+      { original: "живети, ја живим", translation: "жить, я живу" },
+      {
+        original: "радити, ја радим",
+        translation: "работать / делать, я работаю / делаю",
+      },
+      { original: "радим као програмер", translation: "работаю программистом" },
+      { original: "волети, ја волим", translation: "любить, я люблю" },
+      { original: "посао", translation: "работа" },
+      { original: "много", translation: "очень, много" },
+      {
+        original: "бавити се, ја се бавим",
+        translation: "заниматься, я занимаюсь",
+      },
+      { original: "слободно време", translation: "свободное время" },
+      { original: "учити, ја учим", translation: "учить, я учу" },
+      { original: "српски језик", translation: "сербский язык" },
+      { original: "говорити, ја говорим", translation: "говорить, я говорю" },
+      { original: "говорити српски", translation: "говорить по-сербски" },
+      { original: "први пут", translation: "первый раз" },
+      { original: "веома", translation: "очень" },
+      {
+        original: "личити, ја личим",
+        translation: "быть похожим на кого-то, я похож(а) на кого-то",
+      },
+      { original: "један", translation: "один" },
+      { original: "тражити, ја тражим", translation: "искать, я ищу" },
+      { original: "аеродром", translation: "аэропорт" },
+      { original: "видети, ја видим", translation: "видеть, я вижу" },
+      { original: "зато", translation: "поэтому" },
+      { original: "желети, ја желим", translation: "хотеть, я хочу" },
+      {
+        original: "замолити за помоћ, ја замолим",
+        translation: "попросить о помощи, я попрошу",
+      },
+    ],
+  },
 ];

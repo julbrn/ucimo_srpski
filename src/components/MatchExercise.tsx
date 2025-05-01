@@ -79,9 +79,8 @@ export default function MatchExercise({ data }: MatchExerciseProps) {
     };
 
     return (
-        <div className="flex flex-col items-center min-h-screen text-[var(--text-light)] dark:text-[var(--text-dark)]">
+        <div className="flex flex-col items-center text-[var(--text-light)] dark:text-[var(--text-dark)]">
             <h1 className="mb-2 sm:mb-6 text-center font-bold">Соотнесите пары</h1>
-
             <div className="flex relative w-full max-w-5xl justify-between">
                 {/* Левая колонка */}
                 <div className="flex flex-col gap-2 sm:gap-4">
