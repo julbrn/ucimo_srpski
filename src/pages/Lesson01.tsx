@@ -97,7 +97,7 @@ function Lesson01() {
         onPlay={handleAudioPlay}
       />
         <p className="">а) обратите внимание на мягкие љ и њ:</p>
-        <div className="space-y-2 ">
+        <div className="space-y-2 flex flex-wrap justify-between">
           <div className="gap-4">
             <p className="min-w-[124px] ">
               учење{" "}
@@ -168,7 +168,7 @@ function Lesson01() {
         </div>
 
         <p className="">б) обратите внимание на џ и ђ:</p>
-        <div className="space-y-2 ">
+        <div className="space-y-2 flex flex-wrap justify-between">
           <div className="gap-4">
             <p className="min-w-[124px] ">
               Џон{" "}
@@ -251,7 +251,7 @@ function Lesson01() {
           </div>
         </div>
         <p className="">в) обратите внимание на ч и ћ:</p>
-        <div className="space-y-2 ">
+        <div className="space-y-2 flex flex-wrap justify-between">
           <div className="gap-4">
             <p className="min-w-[124px] ">
               меч{" "}
@@ -335,7 +335,7 @@ function Lesson01() {
         </div>
 
         <p className="">г) обратите внимание на ш и ж:</p>
-        <div className="space-y-2 ">
+        <div className="space-y-2 flex flex-wrap justify-between">
           <div className="gap-4">
             <p className="min-w-[124px] ">
               кошарка{" "}
@@ -419,7 +419,7 @@ function Lesson01() {
         </div>
 
         <p className="">д) обратите внимание на все изученные буквы:</p>
-        <div className="space-y-2 ">
+        <div className="space-y-2 flex flex-wrap justify-between">
           <div className="gap-4">
             <p className="min-w-[124px] ">
               сумња{" "}
@@ -498,7 +498,7 @@ function Lesson01() {
           onPlay={handleAudioPlay}
         />
         <p className="font-medium ">а) обратите внимание на lj и nj:</p>
-        <div className="space-y-2 ">
+        <div className="space-y-2 flex flex-wrap justify-between">
           <div className="gap-4">
             <p className="min-w-[124px] ">
               ljuljati{" "}
@@ -560,7 +560,7 @@ function Lesson01() {
           </div>
           <div className="gap-4">
             <p className="min-w-[124px] ">
-              njegov{" "}
+              pevanje{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«пение»)</span>
             </p>
             <InputCheck correct="певање" />
@@ -568,7 +568,7 @@ function Lesson01() {
         </div>
 
         <p className="font-medium text-lg">б) обратите внимание на dž и đ:</p>
-        <div className="space-y-2">
+        <div className="space-y-2 flex flex-wrap justify-between">
           <div className="gap-4">
             <p className="min-w-[124px]">
               džamija{" "}
@@ -629,7 +629,7 @@ function Lesson01() {
 
 
         <p className="font-medium text-lg">в) обратите внимание на č и ć:</p>
-        <div className="space-y-2">
+        <div className="space-y-2 flex flex-wrap justify-between">
           <div className="gap-4">
             <p className="min-w-[124px]">
               pčela{" "}
@@ -677,7 +677,7 @@ function Lesson01() {
               već{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«уже»)</span>
             </p>
-            <InputCheck correct="вече" />
+            <InputCheck correct="већ" />
           </div>
           <div className="gap-4">
             <p className="min-w-[124px]">
@@ -704,7 +704,7 @@ function Lesson01() {
 
 
         <p className="font-medium text-lg">г) обратите внимание на š и ž:</p>
-        <div className="space-y-2">
+        <div className="space-y-2 flex flex-wrap justify-between">
           <div className="gap-4">
             <p className="min-w-[124px]">
               šamar{" "}
@@ -788,7 +788,7 @@ function Lesson01() {
         <p className="font-medium text-lg">
           д) обратите внимание на все изученные буквы:
         </p>
-        <div className="space-y-2">
+        <div className="space-y-2 flex flex-wrap justify-between">
           <div className="gap-4">
             <p className="min-w-[124px]">
               šljiva{" "}
@@ -895,7 +895,7 @@ function Lesson01() {
               <em className="font-semibold">мисао</em> «мысль»,{" "}
               <em className="font-semibold">обилазити</em> «обходить»,{" "}
               <em className="font-semibold">река</em> «река»,{" "}
-              <em className="font-semibold">время</em> «время»,{" "}
+              <em className="font-semibold">време</em> «время»,{" "}
               <em className="font-semibold">отац</em> «отец»
             </TextBlock>
           </div>
@@ -993,6 +993,11 @@ function Lesson01() {
           </div>
         </div>
       </ExerciseBlock>
+      <AudioPlayer
+        src={`${import.meta.env.BASE_URL}/assets/audio/004.-Urok-01_Zapomnite_Privetstvie_-proshchanie_-vyrazhenie-blagodarnosti.mp3`}
+        index={3}
+        onPlay={handleAudioPlay}
+      />
       <RememberBlock
         title={rememberData[0].lessonTitle}
         phrases={rememberData[0].phrases}
