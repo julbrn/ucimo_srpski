@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { ShieldCheckIcon, ShieldExclamationIcon } from "@heroicons/react/24/outline";
-import { v4 as uuidv4 } from "uuid";
+import { useInputMemory } from "../hooks/useInputMemory";
 
 type InputCheckProps = {
   correct: string;
   mode?: "block" | "inline";
 };
 
+
 const InputCheck: React.FC<InputCheckProps> = ({ correct, mode = "block" }) => {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useInputMemory(`inputcheck:${correct}`);
   const [checked, setChecked] = useState(false);
-  const [localKey, setLocalKey] = useState<string | null>(null);
 
   const normalizeCyrillic = (input: string) => {
     return input
@@ -18,39 +18,19 @@ const InputCheck: React.FC<InputCheckProps> = ({ correct, mode = "block" }) => {
       .replace(/J/g, "Ј");
   };
 
-  // Генерация и сохранение уникального ключа для инпута
-  useEffect(() => {
-    const keyBase = `inputcheck:${correct}`;
-    const existingKey = localStorage.getItem(`${keyBase}:uuid`);
-    const uuid = existingKey || uuidv4();
-    if (!existingKey) {
-      localStorage.setItem(`${keyBase}:uuid`, uuid);
-    }
-    setLocalKey(uuid);
-
-    const savedValue = localStorage.getItem(`inputcheck:value:${uuid}`);
-    if (savedValue) {
-      setValue(savedValue);
-      setChecked(true);
-    }
-  }, [correct]);
-
   const isCorrect =
     normalizeCyrillic(value.trim().toLowerCase()) ===
     normalizeCyrillic(correct.trim().toLowerCase());
 
-  const handleCheck = () => {
+  useEffect(() => {
     if (value.trim() !== "") {
       setChecked(true);
     }
-  };
+  }, [value]);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const newValue = e.target.value;
-    setValue(newValue);
-    setChecked(false);
-    if (localKey) {
-      localStorage.setItem(`inputcheck:value:${localKey}`, newValue);
+  const handleCheck = () => {
+    if (value.trim() !== "") {
+      setChecked(true);
     }
   };
 
@@ -77,7 +57,10 @@ const InputCheck: React.FC<InputCheckProps> = ({ correct, mode = "block" }) => {
               : ""
             }`}
           value={value}
-          onChange={handleChange}
+          onChange={(e) => {
+            setValue(e.target.value);
+            setChecked(false);
+          }}
           onKeyDown={(e) => {
             if (e.key === "Enter") {
               handleCheck();
@@ -104,7 +87,7 @@ const InputCheck: React.FC<InputCheckProps> = ({ correct, mode = "block" }) => {
             <ShieldExclamationIcon className="size-5 text-rose-500" />
           )}
           {!checked && (
-            <ShieldExclamationIcon className="size-5 opacity-0 text-rose-500" />
+            <ShieldExclamationIcon className="size-5 opacity-0" />
           )}
         </div>
 

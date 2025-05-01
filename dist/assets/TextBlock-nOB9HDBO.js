@@ -1,1 +1,0 @@
-import{j as a}from"./index-BrNYy_ya.js";const t=({children:e})=>a.jsx("div",{className:"bg-white dark:bg-[var(--field-dark)]  rounded-2xl   text-gray-900 dark:text-white leading-relaxed  shadow-md p-4 sm:p-6 space-y-4",children:e});export{t as T};

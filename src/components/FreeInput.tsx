@@ -1,8 +1,9 @@
 import React from "react";
 import { useState } from "react";
+import { useInputMemory } from "../hooks/useInputMemory";
 
 function FreeInput({ placeholder }: { placeholder: string }) {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useInputMemory(`freeinput:${placeholder}`);
 
   return (
     <textarea
