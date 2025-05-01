@@ -409,7 +409,7 @@ function Lesson01() {
           </div>
           <div className="gap-4">
             <p className="min-w-[124px] ">
-              шушканје{" "}
+              шушкање{" "}
               <span className="text-zinc-600 dark:text-zinc-300">
                 («шуршание»)
               </span>
@@ -501,7 +501,7 @@ function Lesson01() {
         <div className="space-y-2 ">
           <div className="gap-4">
             <p className="min-w-[124px] ">
-              љуљати{" "}
+              ljuljati{" "}
               <span className="text-zinc-600 dark:text-zinc-300">
                 («качать, убаюкивать»)
               </span>
@@ -510,7 +510,7 @@ function Lesson01() {
           </div>
           <div className="gap-4">
             <p className="min-w-[124px] ">
-              љубимац{" "}
+              ljubimac{" "}
               <span className="text-zinc-600 dark:text-zinc-300">
                 («любимец»)
               </span>
@@ -519,14 +519,14 @@ function Lesson01() {
           </div>
           <div className="gap-4">
             <p className="min-w-[124px] ">
-              Љиљана{" "}
+              Ljiljana{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«Лиляна»)</span>
             </p>
             <InputCheck correct="Љиљана" />
           </div>
           <div className="gap-4">
             <p className="min-w-[124px] ">
-              љубазан{" "}
+              ljubazan{" "}
               <span className="text-zinc-600 dark:text-zinc-300">
                 («любезный»)
               </span>
@@ -535,7 +535,7 @@ function Lesson01() {
           </div>
           <div className="gap-4">
             <p className="min-w-[124px] ">
-              љубитељ{" "}
+              ljubitelj{" "}
               <span className="text-zinc-600 dark:text-zinc-300">
                 («любитель»)
               </span>
@@ -544,14 +544,14 @@ function Lesson01() {
           </div>
           <div className="gap-4">
             <p className="min-w-[124px] ">
-              њушити{" "}
+              njušiti{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«нюхать»)</span>
             </p>
             <InputCheck correct="њуšити" />
           </div>
           <div className="gap-4">
             <p className="min-w-[124px] ">
-              његов{" "}
+              njegov{" "}
               <span className="text-zinc-600 dark:text-zinc-300">
                 («его», притяжательное местоимение)
               </span>
@@ -560,332 +560,301 @@ function Lesson01() {
           </div>
           <div className="gap-4">
             <p className="min-w-[124px] ">
-              певање{" "}
+              njegov{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«пение»)</span>
             </p>
             <InputCheck correct="певање" />
           </div>
         </div>
 
-        <p className=" font-medium text-lg">
-          б) обратите внимание на dž и đ:
-        </p>
-        <div className="space-y-2 ">
+        <p className="font-medium text-lg">б) обратите внимание на dž и đ:</p>
+        <div className="space-y-2">
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              џамија{" "}
+            <p className="min-w-[124px]">
+              džamija{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«мечеть»)</span>
             </p>
             <InputCheck correct="џамија" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              ђурђевак{" "}
+            <p className="min-w-[124px]">
+              đurđevak{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«ландыш»)</span>
             </p>
             <InputCheck correct="ђурђевак" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              Ђурђевдан{" "}
-              <span className="text-zinc-600 dark:text-zinc-300">
-                («Юрьев день»)
-              </span>
+            <p className="min-w-[124px]">
+              Đurđevdan{" "}
+              <span className="text-zinc-600 dark:text-zinc-300">(«Юрьев день»)</span>
             </p>
             <InputCheck correct="Ђурђевдан" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              џунгла{" "}
-              <span className="text-zinc-600 dark:text-zinc-300">
-                («джунгли»)
-              </span>
+            <p className="min-w-[124px]">
+              džungla{" "}
+              <span className="text-zinc-600 dark:text-zinc-300">(«джунгли»)</span>
             </p>
             <InputCheck correct="џунгла" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              буђ{" "}
-              <span className="text-zinc-600 dark:text-zinc-300">
-                («плесень»)
-              </span>
+            <p className="min-w-[124px]">
+              buđ{" "}
+              <span className="text-zinc-600 dark:text-zinc-300">(«плесень»)</span>
             </p>
             <InputCheck correct="буђ" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              буђење{" "}
-              <span className="text-zinc-600 dark:text-zinc-300">
-                («пробуждение»)
-              </span>
+            <p className="min-w-[124px]">
+              buđenje{" "}
+              <span className="text-zinc-600 dark:text-zinc-300">(«пробуждение»)</span>
             </p>
             <InputCheck correct="буђење" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              Џон{" "}
+            <p className="min-w-[124px]">
+              Džon{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«Джон»)</span>
             </p>
             <InputCheck correct="Џон" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              Џесика{" "}
-              <span className="text-zinc-600 dark:text-zinc-300">
-                («Джесика»)
-              </span>
+            <p className="min-w-[124px]">
+              Džesika{" "}
+              <span className="text-zinc-600 dark:text-zinc-300">(«Джесика»)</span>
             </p>
             <InputCheck correct="Џесика" />
           </div>
         </div>
 
-        <p className=" font-medium text-lg">в) обратите внимание на č и ć:</p>
-        <div className="space-y-2 ">
+
+        <p className="font-medium text-lg">в) обратите внимание на č и ć:</p>
+        <div className="space-y-2">
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              пчела{" "}
+            <p className="min-w-[124px]">
+              pčela{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«пчела»)</span>
             </p>
             <InputCheck correct="пчела" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              чвор{" "}
+            <p className="min-w-[124px]">
+              čvor{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«узел»)</span>
             </p>
             <InputCheck correct="чвор" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              чврст{" "}
-              <span className="text-zinc-600 dark:text-zinc-300">
-                («твердый»)
-              </span>
+            <p className="min-w-[124px]">
+              čvrst{" "}
+              <span className="text-zinc-600 dark:text-zinc-300">(«твердый»)</span>
             </p>
             <InputCheck correct="чврст" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              ићи{" "}
+            <p className="min-w-[124px]">
+              ići{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«идти»)</span>
             </p>
             <InputCheck correct="ићи" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              моћи{" "}
+            <p className="min-w-[124px]">
+              moći{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«мочь»)</span>
             </p>
             <InputCheck correct="моћи" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              чистити{" "}
-              <span className="text-zinc-600 dark:text-zinc-300">
-                («чистить, очищать»)
-              </span>
+            <p className="min-w-[124px]">
+              čistiti{" "}
+              <span className="text-zinc-600 dark:text-zinc-300">(«чистить, очищать»)</span>
             </p>
             <InputCheck correct="чистити" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              већ{" "}
+            <p className="min-w-[124px]">
+              već{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«уже»)</span>
             </p>
             <InputCheck correct="вече" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              врућ{" "}
-              <span className="text-zinc-600 dark:text-zinc-300">
-                («горячий»)
-              </span>
+            <p className="min-w-[124px]">
+              vruć{" "}
+              <span className="text-zinc-600 dark:text-zinc-300">(«горячий»)</span>
             </p>
             <InputCheck correct="врућ" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              чупав{" "}
-              <span className="text-zinc-600 dark:text-zinc-300">
-                («лохматый, взъерошенный»)
-              </span>
+            <p className="min-w-[124px]">
+              čupav{" "}
+              <span className="text-zinc-600 dark:text-zinc-300">(«лохматый, взъерошенный»)</span>
             </p>
             <InputCheck correct="чупав" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              рећи{" "}
-              <span className="text-zinc-600 dark:text-zinc-300">
-                («сказать»)
-              </span>
+            <p className="min-w-[124px]">
+              reći{" "}
+              <span className="text-zinc-600 dark:text-zinc-300">(«сказать»)</span>
             </p>
             <InputCheck correct="рећи" />
           </div>
         </div>
 
-        <p className=" font-medium text-lg">г) обратите внимание на ш и ж:</p>
-        <div className="space-y-2 ">
+
+        <p className="font-medium text-lg">г) обратите внимание на š и ž:</p>
+        <div className="space-y-2">
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              шамар{" "}
-              <span className="text-zinc-600 dark:text-zinc-300">
-                («пощечина»)
-              </span>
+            <p className="min-w-[124px]">
+              šamar{" "}
+              <span className="text-zinc-600 dark:text-zinc-300">(«пощечина»)</span>
             </p>
             <InputCheck correct="шамар" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              шатор{" "}
+            <p className="min-w-[124px]">
+              šator{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«шатер»)</span>
             </p>
             <InputCheck correct="шатор" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              шах{" "}
-              <span className="text-zinc-600 dark:text-zinc-300">
-                («шахматы»)
-              </span>
+            <p className="min-w-[124px]">
+              šah{" "}
+              <span className="text-zinc-600 dark:text-zinc-300">(«шахматы»)</span>
             </p>
             <InputCheck correct="шах" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              широк{" "}
-              <span className="text-zinc-600 dark:text-zinc-300">
-                («широкий»)
-              </span>
+            <p className="min-w-[124px]">
+              širok{" "}
+              <span className="text-zinc-600 dark:text-zinc-300">(«широкий»)</span>
             </p>
             <InputCheck correct="широк" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              шишати{" "}
+            <p className="min-w-[124px]">
+              šišati{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«стричь»)</span>
             </p>
             <InputCheck correct="шишати" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              жир{" "}
+            <p className="min-w-[124px]">
+              žir{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«желудь»)</span>
             </p>
             <InputCheck correct="жир" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              може{" "}
+            <p className="min-w-[124px]">
+              može{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«может»)</span>
             </p>
             <InputCheck correct="може" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              мождани{" "}
-              <span className="text-zinc-600 dark:text-zinc-300">
-                («мозговой»)
-              </span>
+            <p className="min-w-[124px]">
+              moždani{" "}
+              <span className="text-zinc-600 dark:text-zinc-300">(«мозговой»)</span>
             </p>
             <InputCheck correct="мождани" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              жути{" "}
+            <p className="min-w-[124px]">
+              žuti{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«желтый»)</span>
             </p>
             <InputCheck correct="жути" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              муж{" "}
+            <p className="min-w-[124px]">
+              muž{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«муж»)</span>
             </p>
             <InputCheck correct="муж" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              жбун{" "}
+            <p className="min-w-[124px]">
+              žbun{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«куст»)</span>
             </p>
             <InputCheck correct="жбун" />
           </div>
         </div>
 
-        <p className=" font-medium text-lg">
+
+        <p className="font-medium text-lg">
           д) обратите внимание на все изученные буквы:
         </p>
-        <div className="space-y-2 ">
+        <div className="space-y-2">
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              шљива{" "}
+            <p className="min-w-[124px]">
+              šljiva{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«слива»)</span>
             </p>
             <InputCheck correct="шљива" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              жудња{" "}
+            <p className="min-w-[124px]">
+              žudnja{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«жажда»)</span>
             </p>
             <InputCheck correct="жудња" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              жулити{" "}
-              <span className="text-zinc-600 dark:text-zinc-300">
-                («натирать мозоль»)
-              </span>
+            <p className="min-w-[124px]">
+              žuljiti{" "}
+              <span className="text-zinc-600 dark:text-zinc-300">(«натирать мозоль»)</span>
             </p>
             <InputCheck correct="жуљити" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              чаробњак{" "}
-              <span className="text-zinc-600 dark:text-zinc-300">
-                («волшебник»)
-              </span>
+            <p className="min-w-[124px]">
+              čarobnjak{" "}
+              <span className="text-zinc-600 dark:text-zinc-300">(«волшебник»)</span>
             </p>
             <InputCheck correct="чаробњак" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              миш{" "}
+            <p className="min-w-[124px]">
+              miš{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«мышь»)</span>
             </p>
             <InputCheck correct="миш" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              киша{" "}
+            <p className="min-w-[124px]">
+              kiša{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«дождь»)</span>
             </p>
             <InputCheck correct="киша" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              кућа{" "}
+            <p className="min-w-[124px]">
+              kuća{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«дом»)</span>
             </p>
             <InputCheck correct="кућа" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              комшија{" "}
+            <p className="min-w-[124px]">
+              komšija{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«сосед»)</span>
             </p>
             <InputCheck correct="комшија" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              шала{" "}
+            <p className="min-w-[124px]">
+              šala{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«шутка»)</span>
             </p>
             <InputCheck correct="шала" />
           </div>
           <div className="gap-4">
-            <p className="min-w-[124px] ">
-              спуштање{" "}
+            <p className="min-w-[124px]">
+              spuštanje{" "}
               <span className="text-zinc-600 dark:text-zinc-300">(«спуск»)</span>
             </p>
             <InputCheck correct="спуштање" />

@@ -10,6 +10,7 @@ import ExerciseBlock from "../../components/ExerciseBlock";
 import ImportantBlock from "../../components/ImportantBlock";
 import FreeInput from "../../components/FreeInput";
 import InputCheck from "../../components/InputCheck";
+import TextBlock from "../../components/TextBlock";
 
 function Lesson02v() {
     const [currentAudio, setCurrentAudio] = useState<number | null>(null);
@@ -28,9 +29,9 @@ function Lesson02v() {
 
             <p>Пока Павла расспрашивали на паспортном контроле, он размышлял.</p>
             <AudioPlayer src={`${import.meta.env.BASE_URL}assets/audio/008.-Urok-02_2v.mp3`} index={0} onPlay={handleAudioPlay} />
-            <p>
+            <TextBlock>
                 Врло сам интересантан пасошкој контроли. Ја нисам позната личност. Чудно је. Да ли је све у реду? Да ли сам им сумњив?
-            </p>
+            </TextBlock>
 
             <Glossary
                 phrases={glossaryData.find((g) => g.id === 3)?.phrases || []}
