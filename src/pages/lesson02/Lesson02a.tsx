@@ -227,7 +227,7 @@ function Lesson02a() {
         <em className="py-2 underline block">
           Образец: Ја сам из Русије, ја сам Рус (Рускиња).
         </em>
-        <div className="space-y-6">
+        <div className="space-y-6 leading-12">
           <p >
             1. Ја сам из Пољске, ја сам <InputCheck correct="Пољак" mode="inline" />.
           </p>
@@ -265,7 +265,7 @@ function Lesson02a() {
           Образец: Ово је Марфа, она је из Русије, она је Рускиња.
         </em>
 
-        <div className="space-y-6 ">
+        <div className="space-y-6 leading-12">
           <p >
             1. Ово је Пшемислав, он је из <InputCheck correct="Пољске" mode="inline" />, он је <InputCheck correct="Пољак" mode="inline" />.
           </p>
@@ -349,7 +349,7 @@ function Lesson02a() {
         </TextBlock></ExerciseBlock>
 
       <ExerciseBlock title="  Упражнение 11. Заполните пропуски в диалогах">
-        <div className="space-y-6 ">
+        <div className="space-y-6 leading-12">
           <p className="font-semibold">а)</p>
           <p >
             — Шта си по занимању?
@@ -363,7 +363,7 @@ function Lesson02a() {
 
           <p className="font-semibold ">б)</p>
           <p >
-            — Добар дан! Ја сам Јулија. <InputCheck correct="професорица" mode="inline" /> француског језика.
+            — Добар дан! Ја сам Јулија. <InputCheck correct="Ja сам учитељица" mode="inline" /> француског језика.
           </p>
           <p >
             — Добар дан! А <InputCheck correct="ја" mode="inline" /> сам Петар.
@@ -380,7 +380,7 @@ function Lesson02a() {
       </TextBlock>
         <p >
           Используйте другие имена и названия других профессий.
-        </p></ExerciseBlock>
+        </p><FreeInput placeholder="Запишите Ваш диалог." /></ExerciseBlock>
 
       <ExerciseBlock title="     Упражнение 13. Вспомните, как мы знакомимся">
         <p >
@@ -407,7 +407,7 @@ function Lesson02a() {
         Обратите внимание на глагол <strong>бити</strong>, названия стран и национальностей, названия профессий.
       </p>
       <ExerciseBlock title="Упражнение 14. Вставьте глагол бити в нужной форме">
-        <div className="space-y-6 ">
+        <div className="space-y-6 leading-12">
           <p >1. Ти <InputCheck correct="си" mode="inline" /> из Италије. Ти <InputCheck correct="си" mode="inline" /> Италијанка.</p>
           <p >2. Он <InputCheck correct="је" mode="inline" /> из Кине. Он <InputCheck correct="је" mode="inline" /> Кинез.</p>
           <p >3. Она <InputCheck correct="је" mode="inline" /> из Бугарске. Она <InputCheck correct="је" mode="inline" /> Бугарка.</p>
@@ -424,7 +424,7 @@ function Lesson02a() {
         <p >
           Проверьте себя, запомнили ли вы названия профессий.
         </p>
-        <div className="space-y-6 ">
+        <div className="space-y-6 leading-12">
           <p >1. Ја <InputCheck correct="сам" mode="inline" /> лекарка.</p>
           <p >2. Ти <InputCheck correct="си" mode="inline" /> учитељица.</p>
           <p >3. Он <InputCheck correct="је" mode="inline" /> бизнисмен.</p>
@@ -440,7 +440,7 @@ function Lesson02a() {
         <em className="py-2 underline block">
           Образец: Оне су из Софије, оне су Бугарке.
         </em>
-        <div className="space-y-6 ">
+        <div className="space-y-6 leading-12">
           <p >1. Ја <InputCheck correct="сам" mode="inline" /> из Лондона, ја <InputCheck correct="сам Енглез" mode="inline" />.</p>
           <p >2. Мари <InputCheck correct="је" mode="inline" /> из Париза, она <InputCheck correct="је Францускиња" mode="inline" />.</p>
           <p >3. Марко <InputCheck correct="је" mode="inline" /> из Београда, он <InputCheck correct="је Србин" mode="inline" />.</p>
@@ -454,7 +454,7 @@ function Lesson02a() {
       <ExerciseBlock title="  Упражнение 17. Заполните пропуски в диалогах глаголом бити">  <p >
         Напишите похожие диалоги, изменив имена, названия стран и городов.
       </p>
-        <div className="space-y-6 ">
+        <div className="space-y-6 leading-12">
           <p className="font-semibold">а)</p>
           <p >— Ћао, ја <InputCheck correct="сам" mode="inline" /> Стефан!</p>
           <p >— Ћао, ја <InputCheck correct="сам" mode="inline" /> Мајкл!</p>
@@ -478,7 +478,7 @@ function Lesson02a() {
         </div></ExerciseBlock>
 
       <ExerciseBlock title=" Упражнение 18. Прочитайте диалог и впишите пропущенные слова">
-        <div className="space-y-6">
+        <div className="space-y-6 leading-12">
           <p >— Добар дан! Ја <InputCheck correct="сам" mode="inline" /> Павле.</p>
           <p >— Добар дан! Пасош, <InputCheck correct="молим" mode="inline" /> вас.</p>
           <p >— Изволите.</p>
@@ -493,7 +493,7 @@ function Lesson02a() {
         </div>
       </ExerciseBlock>
       <ExerciseBlock title="     Упражнение 19. Заполните пропуски в диалогах глаголом бити в нужной форме">
-        <div className="space-y-6 ">
+        <div className="space-y-6 leading-12">
           <p className="font-semibold">а)</p>
           <p >— Здраво! Ви <InputCheck correct="сте" mode="inline" /> програмер?</p>
           <p >— Здраво! Не, ја <InputCheck correct="сам" mode="inline" /> менаџер. Програмер <InputCheck correct="је" mode="inline" /> у следећем кабинету.</p>

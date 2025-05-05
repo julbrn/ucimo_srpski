@@ -86,7 +86,7 @@ export const MatchExerciseData: Record<string, MatchExerciseItem> = {
       { id: "programer", text: "програмер / програмерка" },
       { id: "menadzer", text: "менаџер / менаџерка" },
       { id: "biznismen", text: "бизнисмен / бизнисменка" },
-      { id: "gradjevinac", text: "грађевинац" },
+      { id: "gradjevinac", text: "грађевинар" },
       { id: "frizer", text: "фризер / фризерка" },
       { id: "pravnik", text: "правник / правница" },
       { id: "lekar", text: "лекар / лекарка" },

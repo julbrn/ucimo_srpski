@@ -84,7 +84,7 @@ function Lesson02b() {
             </ExerciseBlock>
 
             <ExerciseBlock title="Упражнение 2. Вставьте глагол бити в отрицательной форме и повторите названия столиц и национальностей.">
-                <div className="space-y-6">
+                <div className="space-y-6 leading-12">
                     <p>1. Ја <InputCheck correct="нисам" mode="inline" /> из Москве, ја <InputCheck correct="нисам" mode="inline" /> Рус.</p>
                     <p>2. Ти <InputCheck correct="ниси" mode="inline" /> из Софије, ти <InputCheck correct="ниси" mode="inline" /> Бугарка.</p>
                     <p>3. Мајкл <InputCheck correct="није" mode="inline" /> из Мадрида, он <InputCheck correct="није" mode="inline" /> Шпанац.</p>
@@ -99,7 +99,7 @@ function Lesson02b() {
             </ExerciseBlock>
 
             <ExerciseBlock title="Упражнение 3. Вставьте глагол бити в отрицательной форме.">
-                <div className="space-y-6">
+                <div className="space-y-6 leading-12">
                     <p>— Добар дан! Да Ви <InputCheck correct="сте" mode="inline" /> случајно Јелена?</p>
                     <p>— Добар дан! Да, ја сам Јелена.</p>
                     <p>— Ви сте из Мадрида?</p>

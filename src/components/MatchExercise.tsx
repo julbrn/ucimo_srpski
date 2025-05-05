@@ -18,11 +18,35 @@ interface MatchExerciseProps {
 
 export default function MatchExercise({ data }: MatchExerciseProps) {
     const { leftOptions, rightOptions, correctMatches } = data;
-
+    const dataId = JSON.stringify(correctMatches);
     const [selected, setSelected] = useState<{ id: string, side: 'left' | 'right' } | null>(null);
-    const [matches, setMatches] = useState<Record<string, string>>({});
-    const [correctlyMatched, setCorrectlyMatched] = useState<Set<string>>(new Set());
+    const [matches, setMatches] = useState<Record<string, string>>(() => {
+        const storedCorrect = localStorage.getItem(`match:${dataId}:correctlyMatched`);
+        if (storedCorrect) {
+            const correctSet = new Set<string>(JSON.parse(storedCorrect));
+            const restoredMatches: Record<string, string> = {};
+
+            for (const leftId of correctSet) {
+                if (correctMatches[leftId]) {
+                    restoredMatches[leftId] = correctMatches[leftId];
+                }
+            }
+
+            return restoredMatches;
+        }
+
+        return {};
+    });
+    const [correctlyMatched, setCorrectlyMatchedState] = useState<Set<string>>(() => {
+        const stored = localStorage.getItem(`match:${dataId}:correctlyMatched`);
+        return stored ? new Set(JSON.parse(stored)) : new Set();
+    });
     const [incorrectlyMatched, setIncorrectlyMatched] = useState<Set<string>>(new Set());
+
+    const setCorrectlyMatched = (newSet: Set<string>) => {
+        setCorrectlyMatchedState(newSet);
+        localStorage.setItem(`match:${dataId}:correctlyMatched`, JSON.stringify(Array.from(newSet)));
+    };
 
     const handleClick = (id: string, side: 'left' | 'right') => {
         if (!selected) {
@@ -51,18 +75,14 @@ export default function MatchExercise({ data }: MatchExerciseProps) {
 
     const checkAnswers = () => {
         const newCorrect = new Set<string>();
-        const newIncorrect = new Set<string>();
 
         for (const [leftId, rightId] of Object.entries(matches)) {
             if (correctMatches[leftId] === rightId) {
                 newCorrect.add(leftId);
-            } else {
-                newIncorrect.add(leftId);
             }
         }
 
         setCorrectlyMatched(newCorrect);
-        setIncorrectlyMatched(newIncorrect);
     };
 
     const resetAll = () => {

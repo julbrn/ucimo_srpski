@@ -155,7 +155,7 @@ function Lesson02g() {
             </ImportantBlock>
 
             <ExerciseBlock title="Упражнение 2. Вставьте прилагательное в нужной форме.">
-                <div className="space-y-6">
+                <div className="space-y-6 leading-12">
                     <p>1. Аутомобил је <InputCheck correct="нов" mode="inline" /> (<em>нов</em>). Аутомобили су <InputCheck correct="нови" mode="inline" /> (<em>нови</em>).</p>
                     <p>2. Телефон је <InputCheck correct="леп" mode="inline" /> (<em>леп</em>). Телефони су <InputCheck correct="лепи" mode="inline" /> (<em>лепи</em>).</p>
                     <p>3. Улица је <InputCheck correct="широка" mode="inline" /> (<em>широка</em>). Улице су <InputCheck correct="широке" mode="inline" /> (<em>широке</em>).</p>
@@ -189,7 +189,7 @@ function Lesson02g() {
             </ExerciseBlock>
 
             <ExerciseBlock title="Упражнение 4. Вставьте прилагательное с чередованием л > о.">
-                <div className="space-y-6">
+                <div className="space-y-6 leading-12">
                     <p>1. Милан је <InputCheck correct="весео" mode="inline" /> (<em>весео</em>). Драгана је <InputCheck correct="весела" mode="inline" /> (<em>весела</em>).</p>
                     <p>2. Крушка није <InputCheck correct="зрела" mode="inline" /> (<em>зрела</em>). Оне су <InputCheck correct="зреле" mode="inline" /> (<em>зреле</em>).</p>
                     <p>3. Војник је <InputCheck correct="смео" mode="inline" /> (<em>смео</em>). Дете је <InputCheck correct="смело" mode="inline" /> (<em>смело</em>).</p>
@@ -198,7 +198,7 @@ function Lesson02g() {
                 </div>
             </ExerciseBlock>
             <ExerciseBlock title="Упражнение 5. Вставьте прилагательное с чередованием л > о и с беглым «а».">
-                <div className="space-y-6">
+                <div className="space-y-6 leading-12">
                     <p>1. Стан je <InputCheck correct="топао" mode="inline" /> (<em>топао</em>). Кућа је <InputCheck correct="топла" mode="inline" /> (<em>топла</em>).</p>
                     <p>2. Човек није <InputCheck correct="зао" mode="inline" /> (<em>зао</em>). Људи нису <InputCheck correct="зли" mode="inline" /> (<em>зли</em>).</p>
                     <p>3. Језеро је <InputCheck correct="округло" mode="inline" /> (<em>округло</em>). Земља је <InputCheck correct="округла" mode="inline" /> (<em>округла</em>).</p>

@@ -10,7 +10,10 @@ type InputCheckProps = {
 
 const InputCheck: React.FC<InputCheckProps> = ({ correct, mode = "block" }) => {
   const [value, setValue] = useInputMemory(`inputcheck:${correct}`);
-  const [checked, setChecked] = useState(false);
+  const [checked, setChecked] = useState(() => {
+    const saved = localStorage.getItem(`inputcheck:${correct}:checked`);
+    return saved === "true";
+  });
 
   const normalizeCyrillic = (input: string) => {
     return input
@@ -25,6 +28,7 @@ const InputCheck: React.FC<InputCheckProps> = ({ correct, mode = "block" }) => {
   const handleCheck = () => {
     if (value.trim() !== "") {
       setChecked(true);
+      localStorage.setItem(`inputcheck:${correct}:checked`, "true");
     }
   };
 
@@ -41,7 +45,7 @@ const InputCheck: React.FC<InputCheckProps> = ({ correct, mode = "block" }) => {
           type="text"
           className={`rounded-lg
             ${mode === "inline"
-              ? "text-sm min-w-0 w-auto max-w-[120px] border-b border-gray-400 bg-[var(--field-light)] dark:bg-[var(--field-dark)] px-1 py-0.5"
+              ? "text-sm min-w-0 w-auto max-w-[160px] border-b border-gray-400 bg-[var(--field-light)] dark:bg-[var(--field-dark)] px-1 py-0.5"
               : "max-w-[220px] border border-transparent bg-[var(--field-light)] dark:bg-[var(--field-dark)] w-full px-4 py-3 transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:ring-opacity-50"
             }
             ${checked

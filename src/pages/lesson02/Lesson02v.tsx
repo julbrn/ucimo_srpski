@@ -61,7 +61,7 @@ function Lesson02v() {
             </ExerciseBlock>
 
             <ExerciseBlock title="Упражнение 2. Вставьте глагол бити в утвердительной или отрицательной форме, в зависимости от смысла.">
-                <div className="space-y-6">
+                <div className="space-y-6 leading-12">
                     <p><strong>а)</strong></p>
                     <p>— Добар дан! Да ли <InputCheck correct="сте" mode="inline" /> Ви из Београда?</p>
                     <p>— Добар дан! Не, ја <InputCheck correct="нисам" mode="inline" /> из Београда, али ја <InputCheck correct="сам" mode="inline" /> Србин.</p>
@@ -176,7 +176,7 @@ function Lesson02v() {
                 </div>
             </ExerciseBlock>
             <ExerciseBlock title="Упражнение 4. Ответьте на вопросы утвердительно и отрицательно, используя полную и отрицательную форму глагола бити.">
-                <div className="space-y-6">
+                <div className="space-y-6 leading-12">
                     <p>1. Јесте ли из Енглеске? <InputCheck correct="јесам" mode="inline" /> / <InputCheck correct="нисам" mode="inline" /></p>
                     <p>2. Јеси ли Американац? <InputCheck correct="јесам" mode="inline" /> / <InputCheck correct="нисам" mode="inline" /></p>
                     <p>3. Јесмо ли у Пекингу? <InputCheck correct="јесмо" mode="inline" /> / <InputCheck correct="нисмо" mode="inline" /></p>
@@ -185,7 +185,7 @@ function Lesson02v() {
                 </div>
             </ExerciseBlock>
             <ExerciseBlock title="Упражнение 5. Заполните пропуски.">
-                <div className="space-y-6">
+                <div className="space-y-6 leading-12">
                     <p>— Добар дан! <InputCheck correct="јесмо" mode="inline" /> ли у Београду?</p>
                     <p>— <InputCheck correct="нисмо" mode="inline" />. <InputCheck correct="јесте" mode="inline" /> ли Шпанац?</p>
                     <p>— Не, <InputCheck correct="нисам" mode="inline" /> Шпанац. <InputCheck correct="јесте" mode="inline" /> ли Ви Шпанац?</p>
@@ -213,7 +213,7 @@ function Lesson02v() {
             </ExerciseBlock>
 
             <ExerciseBlock title="Упражнение 7. Вставьте глагол бити в отрицательной форме, дополните диалог.">
-                <div className="space-y-6">
+                <div className="space-y-6 leading-12">
                     <p>— Добар дан!</p>
                     <p>— Добар дан!</p>
                     <p>— Одакле сте Ви? Ви сте из Француске?</p>
@@ -229,7 +229,7 @@ function Lesson02v() {
             </ExerciseBlock>
 
             <ExerciseBlock title="Упражнение 8. Ответьте на вопросы сначала утвердительно, потом отрицательно.">
-                <div className="space-y-6">
+                <div className="space-y-6 leading-12">
                     <p>1. Да ли си из Америке? <InputCheck correct="јесам" mode="inline" /> / <InputCheck correct="нисам" mode="inline" /></p>
                     <p>2. Да ли је Ана из Кине? <InputCheck correct="јесте" mode="inline" /> / <InputCheck correct="није" mode="inline" /></p>
                     <p>3. Да ли је он из Енглеске? <InputCheck correct="јесте" mode="inline" /> / <InputCheck correct="није" mode="inline" /></p>

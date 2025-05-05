@@ -218,7 +218,7 @@ function Lesson03a() {
             </ExerciseBlock>
 
             <ExerciseBlock title="Упражнение 3. Вставьте глагол живети в нужной форме с отрицанием или без, в зависимости от смысла.">
-                <div className="space-y-6">
+                <div className="space-y-6 leading-12">
                     <p>1. Ми <InputCheck correct="не живимо" mode="inline" /> у Лондону, ми смо Американци.</p>
                     <p>2. Ви <InputCheck correct="не живите" mode="inline" /> у Паризу, ви сте Бразилци.</p>
                     <p>3. Ветеринари <InputCheck correct="живе" mode="inline" /> на селу.</p>
@@ -231,7 +231,7 @@ function Lesson03a() {
             </ExerciseBlock>
 
             <ExerciseBlock title="Упражнение 4. Вставьте глагол радити в нужной форме. Обратите внимание на конструкцию радити као «работать кем-то».">
-                <div className="space-y-6">
+                <div className="space-y-6 leading-12">
                     <p>1. Да ли ви <InputCheck correct="радите" mode="inline" /> као аутомеханичари?</p>
                     <p>2. Да ли оне <InputCheck correct="раде" mode="inline" /> као рачуновође?</p>
                     <p>3. Да ли ми <InputCheck correct="радимо" mode="inline" /> као полицајци?</p>
@@ -246,7 +246,7 @@ function Lesson03a() {
             </ExerciseBlock>
 
             <ExerciseBlock title="Упражнение 5. Выберите подходящий по смыслу глагол из текста. Поставьте его в нужную форму настоящего времени, следите за лицом и числом.">
-                <div className="space-y-6">
+                <div className="space-y-6 leading-12">
                     <p>1. Ја сам из Русије, али <InputCheck correct="живим" mode="inline" /> у Србији.</p>
                     <p>2. Павле добро <InputCheck correct="говори" mode="inline" /> српски.</p>
                     <p>3. Овај лекар <InputCheck correct="личи" mode="inline" /> на мог брата.</p>
@@ -259,7 +259,7 @@ function Lesson03a() {
             </ExerciseBlock>
 
             <ExerciseBlock title="Упражнение 6. Поставьте глагол в нужную форму.">
-                <div className="space-y-6">
+                <div className="space-y-6 leading-12">
                     <p>1. Ти <InputCheck correct="живиш" mode="inline" /> у Русији, а ја <InputCheck correct="живим" mode="inline" /> у Србији (живети).</p>
                     <p>2. Конобар <InputCheck correct="ради" mode="inline" /> у ресторану (радити).</p>
                     <p>3. Ви <InputCheck correct="волите" mode="inline" /> радити (волети).</p>
@@ -287,7 +287,7 @@ function Lesson03a() {
 
                     <p className="font-semibold mt-6">б) Задайте вопрос с глаголом говорити и напишите ответ по образцу, опираясь на текст в пункте а).</p>
                     <em className="py-2 block">Образец: Говорите ли Ви српски? Да, ја говорим српски.</em>
-                    <div className="space-y-6 mt-2">
+                    <div className="space-y-6 mt-2 leading-12">
                         <p>1. <InputCheck correct="Говориш" mode="inline" /> ли ти шпански? Не, <InputCheck correct="не говорим" mode="inline" /></p>
                         <p>2. <InputCheck correct="Говори" mode="inline" /> ли Мајкл руски? Да, <InputCheck correct="говори" mode="inline" /></p>
                         <p>3. <InputCheck correct="Говоре" mode="inline" /> ли Павле и Марија енглески? Не, <InputCheck correct="не говоре" mode="inline" /></p>
@@ -298,7 +298,7 @@ function Lesson03a() {
             </ExerciseBlock>
 
             <ExerciseBlock title="Упражнение 8. Вставьте пропущенные окончания.">
-                <div className="space-y-6">
+                <div className="space-y-6 leading-12">
                     <p>— Добар дан! Шта ви жел<InputCheck correct="ите" mode="inline" />?</p>
                     <p>— Добар дан! Жел<InputCheck correct="им" mode="inline" /> радити у вашој фирми.</p>
                     <p>— Добро. Говор<InputCheck correct="ите" mode="inline" /> ли енглески?</p>
