@@ -22,12 +22,6 @@ const InputCheck: React.FC<InputCheckProps> = ({ correct, mode = "block" }) => {
     normalizeCyrillic(value.trim().toLowerCase()) ===
     normalizeCyrillic(correct.trim().toLowerCase());
 
-  useEffect(() => {
-    if (value.trim() !== "") {
-      setChecked(true);
-    }
-  }, [value]);
-
   const handleCheck = () => {
     if (value.trim() !== "") {
       setChecked(true);
