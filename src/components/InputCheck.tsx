@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { ShieldCheckIcon, ShieldExclamationIcon } from "@heroicons/react/24/outline";
 import { useInputMemory } from "../hooks/useInputMemory";
 
@@ -7,11 +7,24 @@ type InputCheckProps = {
   mode?: "block" | "inline";
 };
 
+let instanceCounter = 0;
 
 const InputCheck: React.FC<InputCheckProps> = ({ correct, mode = "block" }) => {
-  const [value, setValue] = useInputMemory(`inputcheck:${correct}`);
+  const elementRef = useRef<HTMLDivElement>(null);
+
+  // Generate a position-based identifier that's stable across renders
+  const [instanceId] = useState(() => {
+    // Each instance gets a unique number when it's first created
+    const uniqueNum = instanceCounter++;
+    return `pos_${uniqueNum}`;
+  });
+
+  // Use the instanceId as part of the storage key
+  const [value, setValue] = useInputMemory(`inputcheck:${instanceId}:${correct}`);
+
   const [checked, setChecked] = useState(() => {
-    const saved = localStorage.getItem(`inputcheck:${correct}:checked`);
+    // Also use the instanceId for the "checked" state
+    const saved = localStorage.getItem(`inputcheck:${instanceId}:${correct}:checked`);
     return saved === "true";
   });
 
@@ -28,14 +41,16 @@ const InputCheck: React.FC<InputCheckProps> = ({ correct, mode = "block" }) => {
   const handleCheck = () => {
     if (value.trim() !== "") {
       setChecked(true);
-      localStorage.setItem(`inputcheck:${correct}:checked`, "true");
+      localStorage.setItem(`inputcheck:${instanceId}:${correct}:checked`, "true");
     }
   };
 
   return (
-    <div className={mode === "inline"
-      ? "inline-flex flex-wrap items-center gap-1 relative max-w-full"
-      : "flex flex-col items-center mb-5 p-0 relative w-full max-w-md"}>
+    <div
+      ref={elementRef}
+      className={mode === "inline"
+        ? "inline-flex flex-wrap items-center gap-1 relative max-w-full"
+        : "flex flex-col items-center mb-5 p-0 relative w-full max-w-md"}>
 
       <div className={mode === "inline"
         ? "relative flex items-center"
