@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import React from "react";
 import ThemeToggler from "./components/ThemeToggler";
 import { Document, Page, pdfjs } from "react-pdf";
 import Sidebar from "./components/SideBar";
@@ -140,7 +141,7 @@ function App() {
         >
           <div className="my-auto">
             <Document
-              file="/pdf/Učimo-srpski.pdf"
+              file={`${import.meta.env.BASE_URL}pdf/Učimo-srpski.pdf`}
               onLoadSuccess={onDocumentLoadSuccess}
               loading={<div className="text-center mt-10 text-[var(--text-light)] dark:text-[var(--text-dark)] bg-white dark:bg-[var(--bg-dark)]">Загрузка...</div>}
             >
