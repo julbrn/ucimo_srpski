@@ -12,21 +12,20 @@ let instanceCounter = 0;
 const InputCheck: React.FC<InputCheckProps> = ({ correct, mode = "block" }) => {
   const elementRef = useRef<HTMLDivElement>(null);
 
-  // Generate a position-based identifier that's stable across renders
+  // Генерируем стабильный идентификатор
   const [instanceId] = useState(() => {
-    // Each instance gets a unique number when it's first created
     const uniqueNum = instanceCounter++;
     return `pos_${uniqueNum}`;
   });
 
-  // Use the instanceId as part of the storage key
-  const [value, setValue] = useInputMemory(`inputcheck:${instanceId}:${correct}`);
+  // Создаем ключ для хранения - одна запись для всех данных
+  const storageKey = `inputcheck:${instanceId}:${correct}`;
 
-  const [checked, setChecked] = useState(() => {
-    // Also use the instanceId for the "checked" state
-    const saved = localStorage.getItem(`inputcheck:${instanceId}:${correct}:checked`);
-    return saved === "true";
-  });
+  // Используем обновленный хук, который возвращает также функции для работы с состоянием checked
+  const [value, setValue, getCheckedState, setCheckedState] = useInputMemory(storageKey);
+
+  // Используем функцию из хука для получения состояния проверки
+  const [checked, setChecked] = useState(() => getCheckedState());
 
   const normalizeCyrillic = (input: string) => {
     return input
@@ -41,7 +40,8 @@ const InputCheck: React.FC<InputCheckProps> = ({ correct, mode = "block" }) => {
   const handleCheck = () => {
     if (value.trim() !== "") {
       setChecked(true);
-      localStorage.setItem(`inputcheck:${instanceId}:${correct}:checked`, "true");
+      // Используем функцию из хука для сохранения состояния проверки
+      setCheckedState(true);
     }
   };
 

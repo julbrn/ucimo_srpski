@@ -156,52 +156,52 @@ function Lesson02g() {
 
             <ExerciseBlock title="Упражнение 2. Вставьте прилагательное в нужной форме.">
                 <div className="space-y-6 leading-12">
-                    <p>1. Аутомобил је <InputCheck correct="нов" mode="inline" /> (<em>нов</em>). Аутомобили су <InputCheck correct="нови" mode="inline" /> (<em>нови</em>).</p>
-                    <p>2. Телефон је <InputCheck correct="леп" mode="inline" /> (<em>леп</em>). Телефони су <InputCheck correct="лепи" mode="inline" /> (<em>лепи</em>).</p>
-                    <p>3. Улица је <InputCheck correct="широка" mode="inline" /> (<em>широка</em>). Улице су <InputCheck correct="широке" mode="inline" /> (<em>широке</em>).</p>
-                    <p>4. Кућа је <InputCheck correct="стара" mode="inline" /> (<em>стара</em>). Куће су <InputCheck correct="старе" mode="inline" /> (<em>старе</em>).</p>
-                    <p>5. Село није <InputCheck correct="велико" mode="inline" /> (<em>велико</em>). Села нису <InputCheck correct="велика" mode="inline" /> (<em>велика</em>).</p>
-                    <p>6. Поље је <InputCheck correct="зелено" mode="inline" /> (<em>зелено</em>). Поља су <InputCheck correct="зелена" mode="inline" /> (<em>зелена</em>).</p>
-                    <p>7. Књига је <InputCheck correct="нова" mode="inline" /> (<em>нова</em>). Књиге су <InputCheck correct="нове" mode="inline" /> (<em>нове</em>).</p>
-                    <p>8. Земља је <InputCheck correct="лепа" mode="inline" /> (<em>лепа</em>). Земље су <InputCheck correct="лепе" mode="inline" /> (<em>лепе</em>).</p>
-                    <p>9. Човек је <InputCheck correct="млад" mode="inline" /> (<em>млад</em>). Људи су <InputCheck correct="млади" mode="inline" /> (<em>млади</em>).</p>
-                    <p>10. Компјутер је <InputCheck correct="нов" mode="inline" /> (<em>нов</em>). Компјутери су <InputCheck correct="нови" mode="inline" /> (<em>нови</em>).</p>
-                    <p>11. Језеро је <InputCheck correct="мало" mode="inline" /> (<em>мало</em>). Језера су <InputCheck correct="мала" mode="inline" /> (<em>мала</em>).</p>
-                    <p>12. Море је <InputCheck correct="чисто" mode="inline" /> (<em>чисто</em>). Мора су <InputCheck correct="чиста" mode="inline" /> (<em>чиста</em>).</p>
+                    <p>1. Аутомобил је <InputCheck correct="нов" mode="inline" />. Аутомобили су <InputCheck correct="нови" mode="inline" /> (<em>нов</em>).</p>
+                    <p>2. Телефон је <InputCheck correct="леп" mode="inline" />. Телефони су <InputCheck correct="лепи" mode="inline" /> (<em>леп</em>).</p>
+                    <p>3. Улица је <InputCheck correct="широка" mode="inline" />. Улице су <InputCheck correct="широке" mode="inline" /> (<em>широк</em>).</p>
+                    <p>4. Кућа је <InputCheck correct="стара" mode="inline" />. Куће су <InputCheck correct="старе" mode="inline" /> (<em>стар</em>).</p>
+                    <p>5. Село није <InputCheck correct="велико" mode="inline" />. Села нису <InputCheck correct="велика" mode="inline" /> (<em>велик</em>).</p>
+                    <p>6. Поље је <InputCheck correct="зелено" mode="inline" />. Поља су <InputCheck correct="зелена" mode="inline" /> (<em>зелен</em>).</p>
+                    <p>7. Књига је <InputCheck correct="нова" mode="inline" />. Књиге су <InputCheck correct="нове" mode="inline" /> (<em>нов</em>).</p>
+                    <p>8. Земља је <InputCheck correct="лепа" mode="inline" />. Земље су <InputCheck correct="лепе" mode="inline" /> (<em>леп</em>).</p>
+                    <p>9. Човек је <InputCheck correct="млад" mode="inline" />. Људи су <InputCheck correct="млади" mode="inline" /> (<em>млад</em>).</p>
+                    <p>10. Компјутер је <InputCheck correct="нов" mode="inline" />. Компјутери су <InputCheck correct="нови" mode="inline" /> (<em>нов</em>).</p>
+                    <p>11. Језеро је <InputCheck correct="мало" mode="inline" />. Језера су <InputCheck correct="мала" mode="inline" /> (<em>мали</em>).</p>
+                    <p>12. Море је <InputCheck correct="чисто" mode="inline" />. Мора су <InputCheck correct="чиста" mode="inline" /> (<em>чист</em>).</p>
                 </div>
             </ExerciseBlock>
 
             <ExerciseBlock title="Упражнение 3. Вставьте прилагательное в нужной форме. Обратите внимание на беглое «а».">
                 <div className="space-y-6">
                     <p>1. Дан је <InputCheck correct="хладан" mode="inline" /> (<em>хладан</em>).</p>
-                    <p>2. Да ли је ово место <InputCheck correct="слободно" mode="inline" /> (<em>слободно</em>)?</p>
+                    <p>2. Да ли је ово место <InputCheck correct="слободно" mode="inline" /> (<em>слободан</em>)?</p>
                     <p>3. Пацијент је <InputCheck correct="храбар" mode="inline" /> (<em>храбар</em>).</p>
-                    <p>4. Она је <InputCheck correct="добра" mode="inline" /> (<em>добра</em>) лекарка.</p>
-                    <p>5. Писмо је <InputCheck correct="кратко" mode="inline" /> (<em>кратко</em>).</p>
-                    <p>6. Супа је <InputCheck correct="одлична" mode="inline" /> (<em>одлична</em>).</p>
+                    <p>4. Она је <InputCheck correct="добра" mode="inline" />лекарка.  (<em>добар</em>) </p>
+                    <p>5. Писмо је <InputCheck correct="кратко" mode="inline" /> (<em>кратак</em>).</p>
+                    <p>6. Супа је <InputCheck correct="одлична" mode="inline" /> (<em>одличан</em>).</p>
                     <p>7. Сир <InputCheck correct="добар" mode="inline" /> (<em>добар</em>).</p>
-                    <p>8. Чоколада је <InputCheck correct="добра" mode="inline" /> (<em>добра</em>).</p>
-                    <p>9. Преговори су <InputCheck correct="успешни" mode="inline" /> (<em>успешни</em>).</p>
-                    <p>10. Девојке су <InputCheck correct="симпатичне" mode="inline" /> (<em>симпатичне</em>).</p>
-                    <p>11. Славко и Милица су <InputCheck correct="гладни" mode="inline" /> (<em>гладни</em>).</p>
-                    <p>12. Панталоне су <InputCheck correct="кратке" mode="inline" /> (<em>кратке</em>).</p>
+                    <p>8. Чоколада је <InputCheck correct="добра" mode="inline" /> (<em>добар</em>).</p>
+                    <p>9. Преговори су <InputCheck correct="успешни" mode="inline" /> (<em>успешан</em>).</p>
+                    <p>10. Девојке су <InputCheck correct="симпатичне" mode="inline" /> (<em>симпатичан</em>).</p>
+                    <p>11. Славко и Милица су <InputCheck correct="гладни" mode="inline" /> (<em>гладан</em>).</p>
+                    <p>12. Панталоне су <InputCheck correct="кратке" mode="inline" /> (<em>кратак</em>).</p>
                 </div>
             </ExerciseBlock>
 
             <ExerciseBlock title="Упражнение 4. Вставьте прилагательное с чередованием л > о.">
                 <div className="space-y-6 leading-12">
-                    <p>1. Милан је <InputCheck correct="весео" mode="inline" /> (<em>весео</em>). Драгана је <InputCheck correct="весела" mode="inline" /> (<em>весела</em>).</p>
-                    <p>2. Крушка није <InputCheck correct="зрела" mode="inline" /> (<em>зрела</em>). Оне су <InputCheck correct="зреле" mode="inline" /> (<em>зреле</em>).</p>
-                    <p>3. Војник је <InputCheck correct="смео" mode="inline" /> (<em>смео</em>). Дете је <InputCheck correct="смело" mode="inline" /> (<em>смело</em>).</p>
-                    <p>4. Јабука је <InputCheck correct="кисела" mode="inline" /> (<em>кисела</em>). Јабуке су <InputCheck correct="киселе" mode="inline" /> (<em>киселе</em>).</p>
-                    <p>5. Пас је <InputCheck correct="дебео" mode="inline" /> (<em>дебео</em>). Мачка је <InputCheck correct="дебела" mode="inline" /> (<em>дебела</em>).</p>
+                    <p>1. Милан је <InputCheck correct="весео" mode="inline" />. Драгана је <InputCheck correct="весела" mode="inline" /> (<em>весео</em>).</p>
+                    <p>2. Крушка није <InputCheck correct="зрела" mode="inline" />. Оне су <InputCheck correct="зреле" mode="inline" /> (<em>зрео</em>).</p>
+                    <p>3. Војник је <InputCheck correct="смео" mode="inline" />. Дете је <InputCheck correct="смело" mode="inline" /> (<em>смео</em>).</p>
+                    <p>4. Јабука је <InputCheck correct="кисела" mode="inline" />. Јабуке су <InputCheck correct="киселе" mode="inline" /> (<em>кисео</em>).</p>
+                    <p>5. Пас је <InputCheck correct="дебео" mode="inline" />. Мачка је <InputCheck correct="дебела" mode="inline" /> (<em>дебео</em>).</p>
                 </div>
             </ExerciseBlock>
             <ExerciseBlock title="Упражнение 5. Вставьте прилагательное с чередованием л > о и с беглым «а».">
                 <div className="space-y-6 leading-12">
-                    <p>1. Стан je <InputCheck correct="топао" mode="inline" /> (<em>топао</em>). Кућа је <InputCheck correct="топла" mode="inline" /> (<em>топла</em>).</p>
-                    <p>2. Човек није <InputCheck correct="зао" mode="inline" /> (<em>зао</em>). Људи нису <InputCheck correct="зли" mode="inline" /> (<em>зли</em>).</p>
-                    <p>3. Језеро је <InputCheck correct="округло" mode="inline" /> (<em>округло</em>). Земља је <InputCheck correct="округла" mode="inline" /> (<em>округла</em>).</p>
+                    <p>1. Стан je <InputCheck correct="топао" mode="inline" />. Кућа је <InputCheck correct="топла" mode="inline" /> (<em>топао</em>).</p>
+                    <p>2. Човек није <InputCheck correct="зао" mode="inline" />. Људи нису <InputCheck correct="зли" mode="inline" /> (<em>зао</em>).</p>
+                    <p>3. Језеро је <InputCheck correct="округло" mode="inline" />. Земља је <InputCheck correct="округла" mode="inline" /> (<em>округао</em>).</p>
                 </div>
             </ExerciseBlock>
             <GrammarBlock>

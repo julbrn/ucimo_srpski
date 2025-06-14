@@ -8,7 +8,7 @@ type AudioPlayerProps = {
 
 
 const AudioPlayer: React.FC<AudioPlayerProps> = ({ src, index, onPlay }) => {
-  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const audioRef = React.useRef<HTMLAudioElement | null>(null);
 
   return (
     <div className="my-4">
@@ -29,5 +29,6 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ src, index, onPlay }) => {
     </div>
   );
 };
+
 
 export default AudioPlayer;

@@ -36,6 +36,10 @@ html {
     font-family: "YS Text Regular Regular", sans-serif;
 }
 
+button {
+    cursor: pointer;
+}
+
 @font-face {
     font-family: "YS Text Regular";
     src: url("/src/assets/fonts/YS\ Text-Regular.woff2") format("woff2");
