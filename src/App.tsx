@@ -47,6 +47,7 @@ function App() {
   }, [pdfWidth]);
   useEffect(() => {
     localStorage.setItem("lastPageNumber", String(pageNumber));
+    console.log(import.meta.env.BASE_URL);
   }, [pageNumber]);
 
   const minSidebar = 200;
