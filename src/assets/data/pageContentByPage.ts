@@ -17,7 +17,7 @@ export const pageContentByPage: PageContent[] = [
         number: "1",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/002   1 LEKCIJE  Lekcija 1  Dobar dan  Cetiri razgovora-pozdravljanje.mp3`,
+        }audio/002---1-LEKCIJE--Lekcija-1--Dobar-dan--Cetiri-razgovora-pozdravljanje.mp3`,
       },
     ],
   },
@@ -28,7 +28,7 @@ export const pageContentByPage: PageContent[] = [
         number: "2",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/003   2 Slusajte i proverite.mp3`,
+        }audio/003---2-Slusajte-i-proverite.mp3`,
       },
     ],
   },
@@ -39,19 +39,19 @@ export const pageContentByPage: PageContent[] = [
         number: "3",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/004   3 Slusajte i pisite prirodan odgovor.mp3`,
+        }audio/004---3-Slusajte-i-pisite-prirodan-odgovor.mp3`,
       },
       {
         number: "4",
-        audio: `${import.meta.env.BASE_URL}audio/005   4 Proverite.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/005---4-Proverite.mp3`,
       },
       {
         number: "5",
-        audio: `${import.meta.env.BASE_URL}audio/006   5 Proverite.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/006---5-Proverite.mp3`,
       },
       {
         number: "6",
-        audio: `${import.meta.env.BASE_URL}audio/006   5 Proverite.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/006---5-Proverite.mp3`,
       },
     ],
   },
@@ -76,7 +76,7 @@ export const pageContentByPage: PageContent[] = [
     items: [
       {
         number: "7",
-        audio: `${import.meta.env.BASE_URL}audio/008   7 Sta cujete.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/008---7-Sta-cujete.mp3`,
       },
       {
         number: "15",
@@ -122,7 +122,7 @@ neformalno: Kako si? Ćao. Vidimo se. Da li si ti Ana? Zdravo. A ti?`,
         number: "8",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/009   Lekcija 2 MOJA ZEMLJA 8 Proverite.mp3`,
+        }audio/009---Lekcija-2-MOJA-ZEMLJA-8-Proverite.mp3`,
       },
       {
         number: "4",
@@ -144,7 +144,7 @@ Kineskinja i Nemac. 10) Sara i ia smo Nemica i Francuskinja.`,
         number: "9",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/010   9 Citajte i slusajte.mp3`,
+        }audio/010---9-Citajte-i-slusajte.mp3`,
       },
     ],
   },
@@ -159,17 +159,17 @@ Kineskinja i Nemac. 10) Sara i ia smo Nemica i Francuskinja.`,
         number: "10",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/011   10 Slusajte i ponovite.mp3`,
+        }audio/011---10-Slusajte-i-ponovite.mp3`,
       },
       {
         number: "11",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/012   11 Slusajte i dopunite.mp3`,
+        }audio/012---11-Slusajte-i-dopunite.mp3`,
       },
       {
         number: "12",
-        audio: `${import.meta.env.BASE_URL}audio/013   12 Diktat.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/013---12-Diktat.mp3`,
       },
     ],
   },
@@ -180,7 +180,7 @@ Kineskinja i Nemac. 10) Sara i ia smo Nemica i Francuskinja.`,
         number: "13",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/014   13 Slusajte i citajte-upoznavanje.mp3`,
+        }audio/014---13-Slusajte-i-citajte-upoznavanje.mp3`,
       },
       {
         number: "15",
@@ -213,13 +213,13 @@ Kineskinja i Nemac. 10) Sara i ia smo Nemica i Francuskinja.`,
         number: "14a",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/015   14a Slusajte i odgovorite prirodno..mp3`,
+        }audio/015---14a-Slusajte-i-odgovorite-prirodno..mp3`,
       },
       {
         number: "14b",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/016   14b Slusajte i proverite.mp3`,
+        }audio/016---14b-Slusajte-i-proverite.mp3`,
       },
       {
         number: "21",
@@ -240,7 +240,7 @@ Italijanka, Italijan; Kineskinja, Kinez.`,
         number: "15",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/017   15 Citajte i slusajte-razgovori.mp3`,
+        }audio/017---15-Citajte-i-slusajte-razgovori.mp3`,
       },
       {
         number: "5",
@@ -248,7 +248,7 @@ Italijanka, Italijan; Kineskinja, Kinez.`,
       },
       {
         number: "16",
-        audio: `${import.meta.env.BASE_URL}audio/018   16 Proverite.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/018---16-Proverite.mp3`,
       },
       {
         number: "8",
@@ -278,17 +278,17 @@ ne učim srpski zato što ne živim i ne radim ovde. Ne razumem sve.`,
         number: "17",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/019   17 Slusajte i upisite tacno ili netacno.mp3`,
+        }audio/019---17-Slusajte-i-upisite-tacno-ili-netacno.mp3`,
       },
       {
         number: "18",
-        audio: `${import.meta.env.BASE_URL}audio/020   18 Sta cujete.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/020---18-Sta-cujete.mp3`,
       },
       {
         number: "19",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/021   19 Marija i Viktor razgovaraju.mp3`,
+        }audio/021---19-Marija-i-Viktor-razgovaraju.mp3`,
       },
     ],
   },
@@ -308,7 +308,7 @@ ne učim srpski zato što ne živim i ne radim ovde. Ne razumem sve.`,
         number: "20",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/022   20 Srbija je i moja zemlja.mp3`,
+        }audio/022---20-Srbija-je-i-moja-zemlja.mp3`,
       },
       {
         number: "21",
@@ -348,7 +348,7 @@ radim; 9) si, nisam, sam; 10) uče, žive.`,
         number: "21",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/023   Lekcija 4 MOJA PORODICA  21 Slusajte i dopunite.mp3`,
+        }audio/023---Lekcija-4-MOJA-PORODICA--21-Slusajte-i-dopunite.mp3`,
       },
     ],
   },
@@ -359,7 +359,7 @@ radim; 9) si, nisam, sam; 10) uče, žive.`,
         number: "22",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/024   22 Citajte i slusajte-prica 1.mp3`,
+        }audio/024---22-Citajte-i-slusajte-prica-1.mp3`,
       },
       {
         number: "5",
@@ -379,7 +379,7 @@ porodica vide svaki dan?; 5) Šta im se sviđa u Srbiji?`,
         number: "23",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/025   23 Citajte i slusajte-prica 2.mp3`,
+        }audio/025---23-Citajte-i-slusajte-prica-2.mp3`,
       },
       {
         number: "9",
@@ -431,7 +431,7 @@ pilates; 8) kuvati ručak.`,
         number: "24",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/026   24 Slusajte i proverite-Zovem se Metju.mp3`,
+        }audio/026---24-Slusajte-i-proverite-Zovem-se-Metju.mp3`,
       },
     ],
   },
@@ -452,7 +452,7 @@ druži; 7) voliš da radiš?; 8) ne vole da ručaju; 9) ne vole da se vide; 10) 
         number: "25",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/027   25 Slusajte i odgovorite prirodno-I ja-Ja ne.mp3`,
+        }audio/027---25-Slusajte-i-odgovorite-prirodno-I-ja-Ja-ne.mp3`,
       },
       {
         number: "24",
@@ -490,7 +490,7 @@ nisu zauzeta.`,
         number: "26",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/028   Lekcija 5 MOJ SVET  26 Beograd.mp3`,
+        }audio/028---Lekcija-5-MOJ-SVET--26-Beograd.mp3`,
       },
     ],
   },
@@ -514,7 +514,7 @@ otvoreni. 13) Zgrade su visoke.`,
     items: [
       {
         number: "27",
-        audio: `${import.meta.env.BASE_URL}audio/029   27 Tri razgovora.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/029---27-Tri-razgovora.mp3`,
       },
     ],
   },
@@ -542,7 +542,7 @@ otvoreni. 13) Zgrade su visoke.`,
         number: "28",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/030   28 Citajte i ponovite.mp3`,
+        }audio/030---28-Citajte-i-ponovite.mp3`,
       },
     ],
   },
@@ -551,7 +551,7 @@ otvoreni. 13) Zgrade su visoke.`,
     items: [
       {
         number: "29",
-        audio: `${import.meta.env.BASE_URL}audio/031   29 Orijentacija.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/031---29-Orijentacija.mp3`,
       },
     ],
   },
@@ -583,7 +583,7 @@ otvoreni. 13) Zgrade su visoke.`,
         number: "30",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/032   Lekcija 6 STA RADIS  30 Razgovor-Jesi li slobodna.mp3`,
+        }audio/032---Lekcija-6-STA-RADIS--30-Razgovor-Jesi-li-slobodna.mp3`,
       },
       {
         number: "3",
@@ -593,7 +593,7 @@ otvoreni. 13) Zgrade su visoke.`,
         number: "31",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/033   31 Slusajte razgovore i odgovorite.mp3`,
+        }audio/033---31-Slusajte-razgovore-i-odgovorite.mp3`,
       },
     ],
   },
@@ -618,7 +618,7 @@ otvoreni. 13) Zgrade su visoke.`,
         number: "32",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/034   32 Zanimanja-cetiri price.mp3`,
+        }audio/034---32-Zanimanja-cetiri-price.mp3`,
       },
     ],
   },
@@ -636,15 +636,15 @@ otvoreni. 13) Zgrade su visoke.`,
     items: [
       {
         number: "33",
-        audio: `${import.meta.env.BASE_URL}audio/035   33 Kuba.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/035---33-Kuba.mp3`,
       },
       {
         number: "34",
-        audio: `${import.meta.env.BASE_URL}audio/036   34 Libija.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/036---34-Libija.mp3`,
       },
       {
         number: "35",
-        audio: `${import.meta.env.BASE_URL}audio/037   35 Srbija.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/037---35-Srbija.mp3`,
       },
     ],
   },
@@ -677,11 +677,11 @@ otvoreni. 13) Zgrade su visoke.`,
         number: "36",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/038   36 Slusajte i dopunite.mp3`,
+        }audio/038---36-Slusajte-i-dopunite.mp3`,
       },
       {
         number: "37",
-        audio: `${import.meta.env.BASE_URL}audio/039   37 Kod direktora.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/039---37-Kod-direktora.mp3`,
       },
     ],
   },
@@ -692,7 +692,7 @@ otvoreni. 13) Zgrade su visoke.`,
         number: "38",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/040   38 Slusajte razgovor.mp3`,
+        }audio/040---38-Slusajte-razgovor.mp3`,
       },
       {
         number: "24",
@@ -713,7 +713,7 @@ otvoreni. 13) Zgrade su visoke.`,
       },
       {
         number: "39",
-        audio: `${import.meta.env.BASE_URL}audio/041   39 Ana i Marko.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/041---39-Ana-i-Marko.mp3`,
       },
     ],
   },
@@ -724,7 +724,7 @@ otvoreni. 13) Zgrade su visoke.`,
         number: "40",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/042   Lekcija 7 SRECAN PUT  40 Sta ovi ljudi rade prvo, drugo i trece.mp3`,
+        }audio/042---Lekcija-7-SRECAN-PUT--40-Sta-ovi-ljudi-rade-prvo,-drugo-i-trece.mp3`,
       },
     ],
   },
@@ -762,13 +762,13 @@ otvoreni. 13) Zgrade su visoke.`,
         number: "41",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/043   41 Sta kaze Branislav.mp3`,
+        }audio/043---41-Sta-kaze-Branislav.mp3`,
       },
       {
         number: "42",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/044   42 Slusajte i dopunite.mp3`,
+        }audio/044---42-Slusajte-i-dopunite.mp3`,
       },
     ],
   },
@@ -779,7 +779,7 @@ otvoreni. 13) Zgrade su visoke.`,
         number: "43",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/045   43 Po cemu je poznata Srbija.mp3`,
+        }audio/045---43-Po-cemu-je-poznata-Srbija.mp3`,
       },
       {
         number: "20",
@@ -804,7 +804,7 @@ fotografijama
         number: "44",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/046   44 Pismo iz Norveske.mp3`,
+        }audio/046---44-Pismo-iz-Norveske.mp3`,
       },
     ],
   },
@@ -813,7 +813,7 @@ fotografijama
     items: [
       {
         number: "45",
-        audio: `${import.meta.env.BASE_URL}audio/047   45 Kuda na odmor.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/047---45-Kuda-na-odmor.mp3`,
       },
     ],
   },
@@ -833,7 +833,7 @@ fotografijama
         number: "46",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/048   Lekcija 8 STIL ZIVOTA  46 Komentarisite prirodno-Tako je i kod nas-Kod nas nije tako.mp3`,
+        }audio/048---Lekcija-8-STIL-ZIVOTA--46-Komentarisite-prirodno-Tako-je-i-kod-nas-Kod-nas-nije-tako.mp3`,
       },
     ],
   },
@@ -863,7 +863,7 @@ fotografijama
     items: [
       {
         number: "47",
-        audio: `${import.meta.env.BASE_URL}audio/049   47 Kakva je kafa.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/049---47-Kakva-je-kafa.mp3`,
       },
     ],
   },
@@ -872,13 +872,13 @@ fotografijama
     items: [
       {
         number: "48",
-        audio: `${import.meta.env.BASE_URL}audio/050   48 U koliko sati.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/050---48-U-koliko-sati.mp3`,
       },
       {
         number: "49",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/051   49 Rezervacija mesta u restoranu.mp3`,
+        }audio/051---49-Rezervacija-mesta-u-restoranu.mp3`,
       },
     ],
   },
@@ -889,7 +889,7 @@ fotografijama
         number: "50",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/052   50 Narucivanje u restoranu.mp3`,
+        }audio/052---50-Narucivanje-u-restoranu.mp3`,
       },
     ],
   },
@@ -916,7 +916,7 @@ fotografijama
     items: [
       {
         number: "51",
-        audio: `${import.meta.env.BASE_URL}audio/053   51 Nasa slava.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/053---51-Nasa-slava.mp3`,
       },
       {
         number: "24",
@@ -955,7 +955,7 @@ da kupe poklone - cveće za domaćicu i vino za domaćina. Treba da kupe i slatk
       },
       {
         number: "52",
-        audio: `${import.meta.env.BASE_URL}audio/054   52 Razgovor o slavi.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/054---52-Razgovor-o-slavi.mp3`,
       },
     ],
   },
@@ -1036,7 +1036,7 @@ promenio je stil života. Tom ne živi više raskošno. već deli svoje bogatstv
         number: "53",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/055   Lekcija 9 UPOMOC  53 Prva prica-Intervju za posao.mp3`,
+        }audio/055---Lekcija-9-UPOMOC--53-Prva-prica-Intervju-za-posao.mp3`,
       },
     ],
   },
@@ -1047,13 +1047,13 @@ promenio je stil života. Tom ne živi više raskošno. već deli svoje bogatstv
         number: "54",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/056   54 Druga prica-Putovanje.mp3`,
+        }audio/056---54-Druga-prica-Putovanje.mp3`,
       },
       {
         number: "55",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/057   55 Komentarisite prirodno.Tako je-Nije tako.mp3`,
+        }audio/057---55-Komentarisite-prirodno.Tako-je-Nije-tako.mp3`,
       },
     ],
   },
@@ -1086,7 +1086,7 @@ B: 1) Nemoj gledati ovaj film. 2) Nemojte kasniti. 3) Nemojmo paničiti. 4) Nemo
     items: [
       {
         number: "56",
-        audio: `${import.meta.env.BASE_URL}audio/058   56 Sta cujete.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/058---56-Sta-cujete.mp3`,
       },
       {
         number: "31",
@@ -1105,7 +1105,7 @@ B: 1) Nemoj gledati ovaj film. 2) Nemojte kasniti. 3) Nemojmo paničiti. 4) Nemo
         number: "57",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/059   57 Lopov u penziji daje savete.mp3`,
+        }audio/059---57-Lopov-u-penziji-daje-savete.mp3`,
       },
       {
         number: "37",
@@ -1120,7 +1120,7 @@ B: 1) Nemoj gledati ovaj film. 2) Nemojte kasniti. 3) Nemojmo paničiti. 4) Nemo
         number: "58",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/060   58 Razgovor-Lose vesti.mp3`,
+        }audio/060---58-Razgovor-Lose-vesti.mp3`,
       },
     ],
   },
@@ -1153,15 +1153,15 @@ B: 1) Nemoj gledati ovaj film. 2) Nemojte kasniti. 3) Nemojmo paničiti. 4) Nemo
         number: "59",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/061   Lekcija 10 KAKO JE KOD VAS  59 Boris.mp3`,
+        }audio/061---Lekcija-10-KAKO-JE-KOD-VAS--59-Boris.mp3`,
       },
       {
         number: "60",
-        audio: `${import.meta.env.BASE_URL}audio/062   60 Ana.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/062---60-Ana.mp3`,
       },
       {
         number: "61",
-        audio: `${import.meta.env.BASE_URL}audio/063   61 Jovana i Marko.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/063---61-Jovana-i-Marko.mp3`,
       },
       {
         number: "10",
@@ -1176,7 +1176,7 @@ B: 1) Nemoj gledati ovaj film. 2) Nemojte kasniti. 3) Nemojmo paničiti. 4) Nemo
         number: "62",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/064   62 Omiljeno godisnje doba.mp3`,
+        }audio/064---62-Omiljeno-godisnje-doba.mp3`,
       },
       {
         number: "16",
@@ -1189,7 +1189,7 @@ B: 1) Nemoj gledati ovaj film. 2) Nemojte kasniti. 3) Nemojmo paničiti. 4) Nemo
     items: [
       {
         number: "63",
-        audio: `${import.meta.env.BASE_URL}audio/065   63 Nevreme.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/065---63-Nevreme.mp3`,
       },
       {
         number: "18",
@@ -1209,13 +1209,13 @@ najopasnije; sigurno, sigurnije, najsigurnije.`,
         number: "64",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/066   64 Kakvo ce vreme biti u Srbiji.mp3`,
+        }audio/066---64-Kakvo-ce-vreme-biti-u-Srbiji.mp3`,
       },
       {
         number: "65",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/067   65 Vremenska prognoza.mp3`,
+        }audio/067---65-Vremenska-prognoza.mp3`,
       },
     ],
   },
@@ -1251,7 +1251,7 @@ Javiću ti. 7) Nećete proći dugo. 8) Mirovaćete dve nedelje.`,
     items: [
       {
         number: "66",
-        audio: `${import.meta.env.BASE_URL}audio/068   66 Pet razgovora.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/068---66-Pet-razgovora.mp3`,
       },
     ],
   },
@@ -1285,7 +1285,7 @@ pantalone. 6) Muškarci drže cveće i cigaru.`,
         number: "67",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/069   Lekcija 11 ODELO (NE) CINI COVEKA  67 Moda nekada.mp3`,
+        }audio/069---Lekcija-11-ODELO-(NE)-CINI-COVEKA--67-Moda-nekada.mp3`,
       },
     ],
   },
@@ -1294,7 +1294,7 @@ pantalone. 6) Muškarci drže cveće i cigaru.`,
     items: [
       {
         number: "68",
-        audio: `${import.meta.env.BASE_URL}audio/070   68 Moda sada.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/070---68-Moda-sada.mp3`,
       },
     ],
   },
@@ -1305,13 +1305,13 @@ pantalone. 6) Muškarci drže cveće i cigaru.`,
         number: "69",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/071   69 Kako izgledaju ovi ljudi.mp3`,
+        }audio/071---69-Kako-izgledaju-ovi-ljudi.mp3`,
       },
       {
         number: "70",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/072   70 Koji opis ide uz koju sliku.mp3`,
+        }audio/072---70-Koji-opis-ide-uz-koju-sliku.mp3`,
       },
     ],
   },
@@ -1322,7 +1322,7 @@ pantalone. 6) Muškarci drže cveće i cigaru.`,
         number: "71",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/073   71 Razgovor-Na snizenju.mp3`,
+        }audio/073---71-Razgovor-Na-snizenju.mp3`,
       },
     ],
   },
@@ -1351,11 +1351,11 @@ pantalone. 6) Muškarci drže cveće i cigaru.`,
         number: "72",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/074   72 Odgovorite prirodno.mp3`,
+        }audio/074---72-Odgovorite-prirodno.mp3`,
       },
       {
         number: "73",
-        audio: `${import.meta.env.BASE_URL}audio/075   73 Kako mi stoji.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/075---73-Kako-mi-stoji.mp3`,
       },
     ],
   },
@@ -1366,7 +1366,7 @@ pantalone. 6) Muškarci drže cveće i cigaru.`,
         number: "74",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/076   Lekcija 12 HOTEL S PET ZVEZDICA  74 Slusajte opise osoba.mp3`,
+        }audio/076---Lekcija-12-HOTEL-S-PET-ZVEZDICA--74-Slusajte-opise-osoba.mp3`,
       },
     ],
   },
@@ -1377,7 +1377,7 @@ pantalone. 6) Muškarci drže cveće i cigaru.`,
         number: "75",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/077   75 Tradicionalna srpska kuca.mp3`,
+        }audio/077---75-Tradicionalna-srpska-kuca.mp3`,
       },
       {
         number: "7",
@@ -1394,7 +1394,7 @@ pantalone. 6) Muškarci drže cveće i cigaru.`,
       },
       {
         number: "76",
-        audio: `${import.meta.env.BASE_URL}audio/078   76 Exit festival.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/078---76-Exit-festival.mp3`,
       },
     ],
   },
@@ -1482,7 +1482,7 @@ Da li su oni Miloš i Boris? 7) Da li si ti Ana? 8) Da li ste vi Sara i Ana?`,
         number: "1",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/079   VEZBANKA  Lekcija 1 DOBAR DAN  1 Slusajte i odgovorite prirodno.mp3`,
+        }audio/079---VEZBANKA--Lekcija-1-DOBAR-DAN--1-Slusajte-i-odgovorite-prirodno.mp3`,
       },
       {
         number: "6",
@@ -1505,7 +1505,7 @@ kompjuter. 7) Kako ste vi? 8) Ona je odlično.`,
       },
       {
         number: "2",
-        audio: `${import.meta.env.BASE_URL}audio/080   2 Proverite.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/080---2-Proverite.mp3`,
       },
     ],
   },
@@ -1516,13 +1516,13 @@ kompjuter. 7) Kako ste vi? 8) Ona je odlično.`,
         number: "3",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/081   Lekcija 2 DOBRODOSLI  3 Slusajte i proverite.mp3`,
+        }audio/081---Lekcija-2-DOBRODOSLI--3-Slusajte-i-proverite.mp3`,
       },
       {
         number: "4",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/082   4 Patrik i Marko razgovaraju.mp3`,
+        }audio/082---4-Patrik-i-Marko-razgovaraju.mp3`,
       },
       {
         number: "5",
@@ -1530,7 +1530,7 @@ kompjuter. 7) Kako ste vi? 8) Ona je odlično.`,
       },
       {
         number: "5",
-        audio: `${import.meta.env.BASE_URL}audio/083   5 Diktat.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/083---5-Diktat.mp3`,
       },
     ],
   },
@@ -1584,7 +1584,7 @@ kompjuter. 7) Kako ste vi? 8) Ona je odlično.`,
         number: "6",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/084   Lekcija 3 RAZUMES LI  6 Slusajte i odgovorite prirodno.mp3`,
+        }audio/084---Lekcija-3-RAZUMES-LI--6-Slusajte-i-odgovorite-prirodno.mp3`,
       },
       {
         number: "5",
@@ -1605,13 +1605,13 @@ kompjuter. 7) Kako ste vi? 8) Ona je odlično.`,
         number: "7",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/085   7 Slusajte i proverite.mp3`,
+        }audio/085---7-Slusajte-i-proverite.mp3`,
       },
       {
         number: "8",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/086   8 Ko ovo kaze, Ana ili Luka.mp3`,
+        }audio/086---8-Ko-ovo-kaze,-Ana-ili-Luka.mp3`,
       },
       {
         number: "10",
@@ -1646,7 +1646,7 @@ Nieni prijatelji žive ovde.`,
         number: "9",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/087   Lekcija 4 MOJA PORODICA  9 Moja porodica.mp3`,
+        }audio/087---Lekcija-4-MOJA-PORODICA--9-Moja-porodica.mp3`,
       },
     ],
   },
@@ -1669,7 +1669,7 @@ da trenirate; 8) voli da ruča; 9) ne volim da koristim; 10) vole da slušaju.`,
       },
       {
         number: "10",
-        audio: `${import.meta.env.BASE_URL}audio/088   10 Boris prica.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/088---10-Boris-prica.mp3`,
       },
     ],
   },
@@ -1706,7 +1706,7 @@ da trenirate; 8) voli da ruča; 9) ne volim da koristim; 10) vole da slušaju.`,
         number: "11",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/089   Lekcija 5 MOJ GRAD  11 Proverite. a.Novi Sad-b.Nis.mp3`,
+        }audio/089---Lekcija-5-MOJ-GRAD--11-Proverite.-a.Novi-Sad-b.Nis.mp3`,
       },
     ],
   },
@@ -1715,7 +1715,7 @@ da trenirate; 8) voli da ruča; 9) ne volim da koristim; 10) vole da slušaju.`,
     items: [
       {
         number: "12",
-        audio: `${import.meta.env.BASE_URL}audio/090   12 Razgovori.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/090---12-Razgovori.mp3`,
       },
     ],
   },
@@ -1724,7 +1724,7 @@ da trenirate; 8) voli da ruča; 9) ne volim da koristim; 10) vole da slušaju.`,
     items: [
       {
         number: "13",
-        audio: `${import.meta.env.BASE_URL}audio/091   13 Price 1, 2 i 3.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/091---13-Price-1,-2-i-3.mp3`,
       },
     ],
   },
@@ -1735,7 +1735,7 @@ da trenirate; 8) voli da ruča; 9) ne volim da koristim; 10) vole da slušaju.`,
         number: "14",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/092   Lekcija 6 STA RADIS  14 Sta je tacno za Vas.mp3`,
+        }audio/092---Lekcija-6-STA-RADIS--14-Sta-je-tacno-za-Vas.mp3`,
       },
     ],
   },
@@ -1746,7 +1746,7 @@ da trenirate; 8) voli da ruča; 9) ne volim da koristim; 10) vole da slušaju.`,
         number: "15",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/093   Lekcija 7 SRECAN PUT  15 Pismo iz Kanade.mp3`,
+        }audio/093---Lekcija-7-SRECAN-PUT--15-Pismo-iz-Kanade.mp3`,
       },
     ],
   },
@@ -1757,7 +1757,7 @@ da trenirate; 8) voli da ruča; 9) ne volim da koristim; 10) vole da slušaju.`,
         number: "16",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/094   Lekcija 8 STIL ZIVOTA  16 Moja radna nedelja.mp3`,
+        }audio/094---Lekcija-8-STIL-ZIVOTA--16-Moja-radna-nedelja.mp3`,
       },
     ],
   },
@@ -1768,11 +1768,11 @@ da trenirate; 8) voli da ruča; 9) ne volim da koristim; 10) vole da slušaju.`,
         number: "17",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/095   17 Razgovor u restoranu.mp3`,
+        }audio/095---17-Razgovor-u-restoranu.mp3`,
       },
       {
         number: "18",
-        audio: `${import.meta.env.BASE_URL}audio/096   18 Gosti na veceri.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/096---18-Gosti-na-veceri.mp3`,
       },
     ],
   },
@@ -1783,7 +1783,7 @@ da trenirate; 8) voli da ruča; 9) ne volim da koristim; 10) vole da slušaju.`,
         number: "19",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/097   19 Odgovorite prirodno.mp3`,
+        }audio/097---19-Odgovorite-prirodno.mp3`,
       },
     ],
   },
@@ -1794,7 +1794,7 @@ da trenirate; 8) voli da ruča; 9) ne volim da koristim; 10) vole da slušaju.`,
         number: "20",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/098   Lekcija 9 UPOMOC  20 Vasilije-Andrija-Milica.mp3`,
+        }audio/098---Lekcija-9-UPOMOC--20-Vasilije-Andrija-Milica.mp3`,
       },
     ],
   },
@@ -1805,7 +1805,7 @@ da trenirate; 8) voli da ruča; 9) ne volim da koristim; 10) vole da slušaju.`,
         number: "21",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/099   21 Postavite pitanja.mp3`,
+        }audio/099---21-Postavite-pitanja.mp3`,
       },
     ],
   },
@@ -1816,7 +1816,7 @@ da trenirate; 8) voli da ruča; 9) ne volim da koristim; 10) vole da slušaju.`,
         number: "22",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/100   Lekcija 10 KAKO JE KOD VAS  22 Zivot u Njujorku.mp3`,
+        }audio/100---Lekcija-10-KAKO-JE-KOD-VAS--22-Zivot-u-Njujorku.mp3`,
       },
     ],
   },
@@ -1825,7 +1825,7 @@ da trenirate; 8) voli da ruča; 9) ne volim da koristim; 10) vole da slušaju.`,
     items: [
       {
         number: "23",
-        audio: `${import.meta.env.BASE_URL}audio/101   23 Kod doktora.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/101---23-Kod-doktora.mp3`,
       },
     ],
   },
@@ -1836,7 +1836,7 @@ da trenirate; 8) voli da ruča; 9) ne volim da koristim; 10) vole da slušaju.`,
         number: "24",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/102   24 Kakvo ce vreme biti sutr u Srbiji.mp3`,
+        }audio/102---24-Kakvo-ce-vreme-biti-sutr-u-Srbiji.mp3`,
       },
     ],
   },
@@ -1847,7 +1847,7 @@ da trenirate; 8) voli da ruča; 9) ne volim da koristim; 10) vole da slušaju.`,
         number: "25",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/103   Lekcija 11 ODELO (NE) CINI COVEKA  25 Kako izgledaju ovi ljudi.mp3`,
+        }audio/103---Lekcija-11-ODELO-(NE)-CINI-COVEKA--25-Kako-izgledaju-ovi-ljudi.mp3`,
       },
     ],
   },
@@ -1858,7 +1858,7 @@ da trenirate; 8) voli da ruča; 9) ne volim da koristim; 10) vole da slušaju.`,
         number: "26",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/104   26 Kao filmska zvezda.mp3`,
+        }audio/104---26-Kao-filmska-zvezda.mp3`,
       },
     ],
   },
@@ -1869,7 +1869,7 @@ da trenirate; 8) voli da ruča; 9) ne volim da koristim; 10) vole da slušaju.`,
         number: "27",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/105   Lekcija 12 HOTEL S PET ZVEZDICA  27 Trazim stan.mp3`,
+        }audio/105---Lekcija-12-HOTEL-S-PET-ZVEZDICA--27-Trazim-stan.mp3`,
       },
     ],
   },
@@ -1878,15 +1878,15 @@ da trenirate; 8) voli da ruča; 9) ne volim da koristim; 10) vole da slušaju.`,
     items: [
       {
         number: "28",
-        audio: `${import.meta.env.BASE_URL}audio/106   28 Prica 1.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/106---28-Prica-1.mp3`,
       },
       {
         number: "29",
-        audio: `${import.meta.env.BASE_URL}audio/107   29 Prica 2.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/107---29-Prica-2.mp3`,
       },
       {
         number: "30",
-        audio: `${import.meta.env.BASE_URL}audio/108   30 Prica 3.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/108---30-Prica-3.mp3`,
       },
     ],
   },
@@ -1897,13 +1897,13 @@ da trenirate; 8) voli da ruča; 9) ne volim da koristim; 10) vole da slušaju.`,
         number: "31",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/109   31 Glasovi i pisma srpskog jezika.mp3`,
+        }audio/109---31-Glasovi-i-pisma-srpskog-jezika.mp3`,
       },
       {
         number: "32",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/110   32 Slusajte i ponovite.mp3`,
+        }audio/110---32-Slusajte-i-ponovite.mp3`,
       },
     ],
   },
@@ -1912,11 +1912,11 @@ da trenirate; 8) voli da ruča; 9) ne volim da koristim; 10) vole da slušaju.`,
     items: [
       {
         number: "33",
-        audio: `${import.meta.env.BASE_URL}audio/111   33 Cirilica.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/111---33-Cirilica.mp3`,
       },
       {
         number: "34",
-        audio: `${import.meta.env.BASE_URL}audio/112   34 Prica o cirilici.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/112---34-Prica-o-cirilici.mp3`,
       },
     ],
   },
@@ -1927,25 +1927,25 @@ da trenirate; 8) voli da ruča; 9) ne volim da koristim; 10) vole da slušaju.`,
         number: "35",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/113   35 Vokali A, E, I, O, U.mp3`,
+        }audio/113---35-Vokali-A,-E,-I,-O,-U.mp3`,
       },
       {
         number: "36",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/114   36 Glasovi koji se izgovaraju uz osmeh-C, DJ, S, Z, C, LJ, NJ.mp3`,
+        }audio/114---36-Glasovi-koji-se-izgovaraju-uz-osmeh-C,-DJ,-S,-Z,-C,-LJ,-NJ.mp3`,
       },
       {
         number: "37",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/115   37 Glasovi koji se izgovaraju bez osmeha-C, DZ, S, Z.mp3`,
+        }audio/115---37-Glasovi-koji-se-izgovaraju-bez-osmeha-C,-DZ,-S,-Z.mp3`,
       },
       {
         number: "38",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/116   38 Glasovi-R, L, D, T, S, Z, S, C.mp3`,
+        }audio/116---38-Glasovi-R,-L,-D,-T,-S,-Z,-S,-C.mp3`,
       },
     ],
   },
@@ -1954,39 +1954,39 @@ da trenirate; 8) voli da ruča; 9) ne volim da koristim; 10) vole da slušaju.`,
     items: [
       {
         number: "39",
-        audio: `${import.meta.env.BASE_URL}audio/117   39 Dopunite-H, J, G.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/117---39-Dopunite-H,-J,-G.mp3`,
       },
       {
         number: "40",
-        audio: `${import.meta.env.BASE_URL}audio/118   40 Dopunite-C ili C.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/118---40-Dopunite-C-ili-C.mp3`,
       },
       {
         number: "41",
-        audio: `${import.meta.env.BASE_URL}audio/119   41 DJ ili DZ.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/119---41-DJ-ili-DZ.mp3`,
       },
       {
         number: "42",
-        audio: `${import.meta.env.BASE_URL}audio/120   42 S ili S.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/120---42-S-ili-S.mp3`,
       },
       {
         number: "43",
-        audio: `${import.meta.env.BASE_URL}audio/121   43 C ili S.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/121---43-C-ili-S.mp3`,
       },
       {
         number: "44",
-        audio: `${import.meta.env.BASE_URL}audio/122   44 Z ili S.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/122---44-Z-ili-S.mp3`,
       },
       {
         number: "45",
-        audio: `${import.meta.env.BASE_URL}audio/123   45 Z ili Z.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/123---45-Z-ili-Z.mp3`,
       },
       {
         number: "46",
-        audio: `${import.meta.env.BASE_URL}audio/124   46 L ili LJ.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/124---46-L-ili-LJ.mp3`,
       },
       {
         number: "47",
-        audio: `${import.meta.env.BASE_URL}audio/125   47 N ili NJ.mp3`,
+        audio: `${import.meta.env.BASE_URL}audio/125---47-N-ili-NJ.mp3`,
       },
     ],
   },
@@ -1997,19 +1997,19 @@ da trenirate; 8) voli da ruča; 9) ne volim da koristim; 10) vole da slušaju.`,
         number: "48",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/126   48 Napisite cirilicom.mp3`,
+        }audio/126---48-Napisite-cirilicom.mp3`,
       },
       {
         number: "49",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/127   49 Konsonanti-C, C, DZ, C, DJ.mp3`,
+        }audio/127---49-Konsonanti-C,-C,-DZ,-C,-DJ.mp3`,
       },
       {
         number: "50",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/128   50 Konsonanti-S, Z, S, Z, F, H.mp3`,
+        }audio/128---50-Konsonanti-S,-Z,-S,-Z,-F,-H.mp3`,
       },
     ],
   },
@@ -2020,19 +2020,19 @@ da trenirate; 8) voli da ruča; 9) ne volim da koristim; 10) vole da slušaju.`,
         number: "51",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/129   51 Konsonanti-L, LJ, R, M, N, NJ, J, V.mp3`,
+        }audio/129---51-Konsonanti-L,-LJ,-R,-M,-N,-NJ,-J,-V.mp3`,
       },
       {
         number: "52",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/130   52 Konsonanti-B, P, D, T, G, K.mp3`,
+        }audio/130---52-Konsonanti-B,-P,-D,-T,-G,-K.mp3`,
       },
       {
         number: "53",
         audio: `${
           import.meta.env.BASE_URL
-        }audio/131   53 Sta cujete, zaokruzite.mp3`,
+        }audio/131---53-Sta-cujete,-zaokruzite.mp3`,
       },
     ],
   },
